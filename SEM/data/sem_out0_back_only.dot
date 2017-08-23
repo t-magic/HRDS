@@ -1,0 +1,19 @@
+digraph  fit {
+rankdir=TB;
+size="8,8";
+edge [fontname="sans"  ,fontsize=8,arrowsize = 0.8,penwidth=0.8];
+graph [ordering = out,splines = true,overlap = false];
+center=1;
+node [shape =ellipse];潜在意識A 潜在意識B 潜在意識C 潜在意識D 潜在意識E 潜在意識F 潜在意識G 潜在意識H 潜在意識I;
+node [fontname="serif" ,fontsize=14, shape=box];
+{rank=min };
+潜在意識B->潜在意識A[label=0.68,dir=back];
+潜在意識I->潜在意識C[label=-2.9,dir=back];
+潜在意識I->潜在意識G[label=0.61,dir=back];
+潜在意識I->潜在意識H[label=0.55,dir=back];
+潜在意識I->潜在意識A[label=2.8,dir=back];
+潜在意識I->潜在意識B[label=0.0056,dir=back];
+潜在意識H->潜在意識D[label=-0.27,dir=back];
+潜在意識H->潜在意識E[label=0.62,dir=back];
+潜在意識H->潜在意識F[label=0.41,dir=back];
+}
