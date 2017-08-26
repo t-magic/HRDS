@@ -1,7 +1,7 @@
 # HRDS
 
 # 最初にすること
-* 画像をクリックすると視聴できます。
+* 画像をクリックするとyoutubeの動画を視聴できます。
 
 ## 1. Jupyterのインストール
 * HRDataScientistWG 03 Jupyterのインストール
@@ -25,7 +25,7 @@
 
 ## 3. リポジトリーのダウンロード
 #### GitHubのアカウント作成をしない場合
-* https://github.com/t-magic/HRDS に行き、下図のようにして、ダウンロードしてください。
+* [https://github.com/t-magic/HRDS](https://github.com/t-magic/HRDS)に行き、下図のようにして、ダウンロードしてください。
 
 ![](pict/HRDSpage.JPG)
 
@@ -33,7 +33,7 @@
 
 #### GitHubのアカウント作成をした場合
 
-* https://github.com/t-magic/DSPR  に行き、下図のようにして、ダウンロードしてください。
+* [https://github.com/t-magic/DSPR](https://github.com/t-magic/DSPR)に行き、下図のようにして、ダウンロードしてください。
 
 ![](pict/github_page.JPG)
 
