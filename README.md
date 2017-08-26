@@ -24,14 +24,14 @@
 
 
 ## 3. リポジトリーのダウンロード
-#### GitHubのアカウント作成をしない場合
+#### GitHubのアカウントを作成しない場合
 * [https://github.com/t-magic/HRDS](https://github.com/t-magic/HRDS)に行き、下図のようにして、ダウンロードしてください。
 
 ![](pict/HRDSpage.JPG)
 
 ---
 
-#### GitHubのアカウント作成をした場合
+#### GitHubのアカウントを作成した場合
 (アカウント作成後、管理者(舘野)にユーザー名を連絡し、管理者からの招待メールにあるURLをクリックした後、操作できます。)
 * [https://github.com/t-magic/DSPR](https://github.com/t-magic/DSPR)に行き、下図のようにして、ダウンロードしてください。
 
