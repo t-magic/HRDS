@@ -37,10 +37,6 @@
 
 ![](pict/github_page.JPG)
 
-[test](topic_map/Jupyter.ipynb)
-
-[test](topic_map/Jupyter.html)
-
 ---
 
 * HRデータサイエンティストWGで共有する情報をここに置きます。
