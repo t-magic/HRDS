@@ -7,7 +7,9 @@
 * HRDataScientistWG 03 Jupyterのインストール
 
  [![](https://i.ytimg.com/vi/xV2lnIInON8/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAxy_mBn51kdTEOuP8zaK9ZqkAeyA)](https://youtu.be/xV2lnIInON8)
- * ここではPython3.5をインストールしていますが、最新版(3.6)をインストールしてください。
+ * このyoutubeではPython3.5をインストールしていますが、最新版(3.6)をインストールしてください。
+ * Jupyterの中でRを使用する場合は、[ここ](https://conda.io/docs/user-guide/tasks/use-r-with-conda.html)を参考にしてください。
+ * Jupyterの中でPython2.7も使用する場合は、[ここ](http://www.geocities.jp/penguinitis2002/computer/programming/Python/Anaconda_Python2_3.html)を参考にしてください。
 
 ## 2. (できれば)GitHubのアカウント作成
 アカウント作成後、ユーザー名をサイト管理者(舘野)にお知らせください。
