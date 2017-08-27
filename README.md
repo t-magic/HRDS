@@ -1,4 +1,6 @@
 # HRDS
+[ホームページ](https://t-magic.github.io/HRDS/)  
+[リポジトリー](https://github.com/t-magic/HRDS/)
 
 # 進め方
 * 同じ項目をする人でペアになり、教え合いながら進めます。
