@@ -1,5 +1,9 @@
 # HRDS
 
+# 進め方
+* 同じ項目をする人でペアになり、教え合いながら進めます。
+* わからないところは多くの人が疑問を持つところですので、ペアで解決できないところは、みんなで解決していきます。
+
 # 最初にすること
 * 画像をクリックするとyoutubeの動画を視聴できます。
 
@@ -8,8 +12,10 @@
 
  [![](https://i.ytimg.com/vi/xV2lnIInON8/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAxy_mBn51kdTEOuP8zaK9ZqkAeyA)](https://youtu.be/xV2lnIInON8)
  * このyoutubeではPython3.5をインストールしていますが、最新版(3.6)をインストールしてください。
- * Jupyterの中でRを使用する場合は、[ここ](https://conda.io/docs/user-guide/tasks/use-r-with-conda.html)を参考にしてください。
- * Jupyterの中でPython2.7も使用する場合は、[ここ](http://www.geocities.jp/penguinitis2002/computer/programming/Python/Anaconda_Python2_3.html)を参考にしてください。
+### 参考
+ 1. 環境変数の設定を確認する場合、[ここ](環境変数の確認.md)を参考にしてください。
+ 1. Jupyterの中でRを使用する場合は、[ここ](https://conda.io/docs/user-guide/tasks/use-r-with-conda.html)を参考にしてください。
+ 1. Jupyterの中でPython2.7も使用する場合は、[ここ](http://www.geocities.jp/penguinitis2002/computer/programming/Python/Anaconda_Python2_3.html)を参考にしてください。
 
 ## 2. (できれば)GitHubのアカウント作成
 アカウント作成後、ユーザー名をサイト管理者(舘野)にお知らせください。
@@ -43,14 +49,18 @@
 [こちら](ポケドラの接続.md)
 
 ---
+## リポジトリー
+  * https://github.com/t-magic/HRDS にあります。
 
-* HRデータサイエンティストWGで共有する情報をここに置きます。
-  * [Lesson_01_Pandasを使ってみよう](LessonPandas/Lesson_01_Pandasを使ってみよう.html)
-  * [Lesson_02_Pandasを使ってみよう2](LessonPandas/Lesson_02_Pandasを使ってみよう2.html)
-* クラスタリング
+## 4. JupyterでPandasを試す。
+  * 「 [Lesson_01_Pandasを使ってみよう](LessonPandas/Lesson_01_Pandasを使ってみよう.html) 」を見ながら、 「 LessonPandas/Lesson_01_Pandasを使ってみよう.ipynb 」を開いて実行します。
+  * 「 [Lesson_02_Pandasを使ってみよう2](LessonPandas/Lesson_02_Pandasを使ってみよう2.html) 」を見ながら、 「 Lesson_02_Pandasを使ってみよう2.ipynb 」を開いて実行します。
+
+## 5. 構造方程式モデリング
+[こちら](構造方程式モデリング(SEM)を試す.md)へ
+
+## 6. クラスタリング
   * [Clustering using K-Means with Titanic Dataset](Clustering/Clustering+using+K-Means+with+Titanic+Dataset.html)
   * [Trials of Flat and Hierarchical Clusterings with Titanic Data](Clustering/Trials+of+Flat+and+Hierarchical+Clusterings+with+Titanic+Data.html)
-* カテゴライズ
+## 7. カテゴライズ
   * [Random_Forests_%3D%3D_Awesome](https://github.com/mbernico/CS570/blob/master/module_2/Random_Forests_%3D%3D_Awesome.ipynb)
-* リポジトリー
-  * [github](https://github.com/t-magic/HRDS)
