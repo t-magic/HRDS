@@ -14,7 +14,10 @@
  * このyoutubeではPython3.5をインストールしていますが、最新版(3.6)をインストールしてください。
 ### 参考
  1. 環境変数の設定を確認する場合、[ここ](環境変数の確認.md)を参考にしてください。
- 1. Jupyterの中でRを使用する場合は、[ここ](https://conda.io/docs/user-guide/tasks/use-r-with-conda.html)を参考にしてください。
+ 1. Jupyterの中でRを使用する場合は、[ここ](https://conda.io/docs/user-guide/tasks/use-r-with-conda.html)を参考にしてください。コマンドプロンプトで以下を実行します。
+ ```
+ > conda install r-essentials
+ ```
  1. Jupyterの中でPython2.7も使用する場合は、[ここ](http://www.geocities.jp/penguinitis2002/computer/programming/Python/Anaconda_Python2_3.html)を参考にしてください。
 
 ## 2. (できれば)GitHubのアカウント作成
@@ -30,8 +33,14 @@
  [![](https://i.ytimg.com/vi/RHj-859yXWo/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDtN_loLgVpeY1SeQ2aY2xpR9bhCQ)](https://youtu.be/RHj-859yXWo?t=94)
 * (先頭から1分34秒目～)
 
+---
 
 ## 3. リポジトリーのダウンロード
+
+### リポジトリーの場所
+* 公開のものは、[https://github.com/t-magic/HRDS](https://github.com/t-magic/HRDS)にあります。
+* 非公開(ユーザー名/パスワードで入ります)のものは、[https://github.com/t-magic/DSPR](https://github.com/t-magic/DSPR)にありますが、管理者がユーザー名を登録することでアクセスできるようになります。
+
 #### 3-1 GitHubのアカウントを作成しない場合
 * [https://github.com/t-magic/HRDS](https://github.com/t-magic/HRDS)に行き、下図のようにして、ダウンロードしてください。
 
@@ -49,19 +58,21 @@
 [こちら](ポケドラの接続.md)
 
 ---
-## リポジトリー
-  * [https://github.com/t-magic/HRDS](https://github.com/t-magic/HRDS) にあります。
 
-## 4. JupyterでPandasを試す。
-  * 「 [Lesson_01_Pandasを使ってみよう](LessonPandas/Lesson_01_Pandasを使ってみよう.html) 」を見ながら、 「 LessonPandas/Lesson_01_Pandasを使ってみよう.ipynb 」を開いて実行します。
-  * 「 [Lesson_02_Pandasを使ってみよう2](LessonPandas/Lesson_02_Pandasを使ってみよう2.html) 」を見ながら、 「 Lesson_02_Pandasを使ってみよう2.ipynb 」を開いて実行します。
+## 4. JupyterでPandasを試す
+  * 「 [Lesson_01_Pandasを使ってみよう](LessonPandas/Lesson_01_Pandasを使ってみよう.html) 」を参考にして、Jupyterで「 LessonPandas/Lesson_01_Pandasを使ってみよう.ipynb 」を開いて実行します。
+  * 「 [Lesson_02_Pandasを使ってみよう2](LessonPandas/Lesson_02_Pandasを使ってみよう2.html) 」を参考にして、Jupyterで「 Lesson_02_Pandasを使ってみよう2.ipynb 」を開いて実行します。
+  * 日本語の表示がうまくできない場合
+    * 「 [LessonPandas/日本語フォントの設定_まとめ.html](LessonPandas/日本語フォントの設定_まとめ.html) 」を参考にして、「 LessonPandas/日本語フォントの設定_まとめ.ipynb 」を開いて実行します。
 
-## 5. 構造方程式モデリング
-[こちら](構造方程式モデリング(SEM)を試す.md)へ
+## 5. 構造方程式モデリングを試す
+* JupyterにRが入っているか、PCにRが入っている必要があります。
 
-## 6. クラスタリング
+[こちら](SEM.md)へ
+
+## 6. クラスタリングを試す
   * [Clustering using K-Means with Titanic Dataset](Clustering/Clustering+using+K-Means+with+Titanic+Dataset.html)
   * [Trials of Flat and Hierarchical Clusterings with Titanic Data](Clustering/Trials+of+Flat+and+Hierarchical+Clusterings+with+Titanic+Data.html)
 
-## 7. カテゴライズ
+## 7. カテゴライズを試す
   * [Random_Forests_%3D%3D_Awesome](https://github.com/mbernico/CS570/blob/master/module_2/Random_Forests_%3D%3D_Awesome.ipynb)
