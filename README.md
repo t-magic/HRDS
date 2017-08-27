@@ -39,7 +39,7 @@
 
 ### リポジトリーの場所
 * 公開のものは、[https://github.com/t-magic/HRDS](https://github.com/t-magic/HRDS)にあります。
-* 非公開(ユーザー名/パスワードで入ります)のものは、[https://github.com/t-magic/DSPR](https://github.com/t-magic/DSPR)にありますが、管理者がユーザー名を登録することでアクセスできるようになります。
+* 非公開(ユーザー名/パスワードが必要です)のものは、[https://github.com/t-magic/DSPR](https://github.com/t-magic/DSPR)にありますが、管理者がユーザー名を登録することでアクセスできるようになります。
 
 #### 3-1 GitHubのアカウントを作成しない場合
 * [https://github.com/t-magic/HRDS](https://github.com/t-magic/HRDS)に行き、下図のようにして、ダウンロードしてください。
