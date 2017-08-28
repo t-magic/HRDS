@@ -43,6 +43,11 @@
 * 公開のものは、[https://github.com/t-magic/HRDS](https://github.com/t-magic/HRDS)にあります。
 * 非公開(ユーザー名/パスワードが必要です)のものは、[https://github.com/t-magic/DSPR](https://github.com/t-magic/DSPR)にありますが、管理者がユーザー名を登録することでアクセスできるようになります。
 
+### 解凍の際に文字化けする場合 (Windows)
+* 以下のソフトを使って解凍すると文字化けしないようです。
+  * CubeICE (http://www.cube-soft.jp/cubeice/index.php)
+  * 7zip (https://sevenzip.osdn.jp/)
+
 #### 3-1 GitHubのアカウントを作成しない場合
 * [https://github.com/t-magic/HRDS](https://github.com/t-magic/HRDS)に行き、下図のようにして、ダウンロードしてください。
 
