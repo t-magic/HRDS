@@ -1,7 +1,7 @@
 # HRDS
-[ホームページ](https://t-magic.github.io/HRDS/)  
-[リポジトリー](https://github.com/t-magic/HRDS/)  
-[Wikiページ](https://github.com/t-magic/HRDS/wiki)  
+* [ホームページ](https://t-magic.github.io/HRDS/)  
+* [リポジトリー](https://github.com/t-magic/HRDS/)  
+* [Wikiページ](https://github.com/t-magic/HRDS/wiki)  
 
 # 進め方
 * 同じ項目をする人でペアになり、教え合いながら進めます。
