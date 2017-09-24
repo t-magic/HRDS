@@ -6,3 +6,5 @@ PCA/.ipynb_checkpoints/# PCA_試作-checkpoint.ipynb
 SEM/graphviz/windows/graphviz-2.38.msi
 Clustering/.ipynb_checkpoints/mpld3-checkpoint.ipynb
 Clustering/.ipynb_checkpoints/mpld3-checkpoint.ipynb
+obsolete/**
+SEM/obsolete/**
