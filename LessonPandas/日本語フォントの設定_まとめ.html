@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>SEM分析で必要となるRのパッケージの導入</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>日本語フォントの設定(まとめ)</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11,8 +13,8 @@
 *
 */
 /*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -1107,6 +1109,7 @@ a:focus {
   text-decoration: underline;
 }
 a:focus {
+  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -2535,6 +2538,7 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
+  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -3025,6 +3029,7 @@ select[multiple].input-lg {
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
+  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -8755,9 +8760,6 @@ body > #header .header-bar {
     margin-left: 10px;
   }
 }
-[dir="rtl"] #ipython_notebook {
-  float: right !important;
-}
 #noscript {
   width: auto;
   padding-top: 16px;
@@ -8960,14 +8962,8 @@ span#login_widget > .button .badge,
  *
  * Author: Jupyter Development Team
  */
-[dir="rtl"] #tabs li {
-  float: right;
-}
 ul#tabs {
   margin-bottom: 4px;
-}
-[dir="rtl"] ul#tabs {
-  margin-right: 0px;
 }
 ul#tabs a {
   padding-top: 6px;
@@ -8990,16 +8986,6 @@ ul.breadcrumb span {
 }
 .list_toolbar .tree-buttons {
   padding-top: 1px;
-}
-[dir="rtl"] .list_toolbar .tree-buttons {
-  float: left !important;
-}
-[dir="rtl"] .list_toolbar .pull-right {
-  padding-top: 1px;
-  float: left !important;
-}
-[dir="rtl"] .list_toolbar .pull-left {
-  float: right !important;
 }
 .dynamic-buttons {
   padding-top: 3px;
@@ -9136,9 +9122,6 @@ ul.breadcrumb span {
 #tree-selector {
   padding-right: 0px;
 }
-[dir="rtl"] #tree-selector a {
-  float: right;
-}
 #button-select-all {
   min-width: 50px;
 }
@@ -9228,9 +9211,6 @@ ul#new-menu {
   left: auto;
   right: 0;
 }
-[dir="rtl"] #new-menu {
-  text-align: right;
-}
 .kernel-menu-icon {
   padding-right: 12px;
   width: 24px;
@@ -9275,9 +9255,6 @@ ul#new-menu {
 }
 #running .panel-group .panel .panel-body .list_container .list_item:last-child {
   border-bottom: 0px;
-}
-[dir="rtl"] #running .col-sm-8 {
-  float: right !important;
 }
 .delete-button {
   display: none;
@@ -9574,7 +9551,6 @@ div.cell.selected.jupyter-soft-selected {
   }
 }
 div.inner_cell {
-  min-width: 0;
   /* Old browsers */
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -9595,6 +9571,11 @@ div.inner_cell {
   box-flex: 1;
   /* Modern browsers */
   flex: 1;
+}
+@-moz-document url-prefix() {
+  div.inner_cell {
+    overflow-x: hidden;
+  }
 }
 /* input_area and input_prompt must match in top border and margin for alignment */
 div.input_area {
@@ -11265,7 +11246,7 @@ div#pager .ui-resizable-handle::after {
 }
 .shortcut_key {
   display: inline-block;
-  width: 21ex;
+  width: 20ex;
   text-align: right;
   font-family: monospace;
 }
@@ -11577,7 +11558,6 @@ ul.typeahead-list > li > a {
   box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
 }
 .terminal-app .terminal {
-  width: 100%;
   float: left;
   font-family: monospace;
   color: white;
@@ -11591,9 +11571,6 @@ ul.typeahead-list > li > a {
 .terminal-app .terminal dummy-screen {
   line-height: 1em;
   font-size: 14px;
-}
-.terminal-app .terminal .xterm-rows {
-  padding: 10px;
 }
 .terminal-app .terminal-cursor {
   color: black;
@@ -11654,10 +11631,8 @@ ul.typeahead-list > li > a {
 .highlight .mh { color: #666666 } /* Literal.Number.Hex */
 .highlight .mi { color: #666666 } /* Literal.Number.Integer */
 .highlight .mo { color: #666666 } /* Literal.Number.Oct */
-.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
 .highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
 .highlight .sc { color: #BA2121 } /* Literal.String.Char */
-.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
 .highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
 .highlight .s2 { color: #BA2121 } /* Literal.String.Double */
 .highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
@@ -11668,11 +11643,9 @@ ul.typeahead-list > li > a {
 .highlight .s1 { color: #BA2121 } /* Literal.String.Single */
 .highlight .ss { color: #19177C } /* Literal.String.Symbol */
 .highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
-.highlight .fm { color: #0000FF } /* Name.Function.Magic */
 .highlight .vc { color: #19177C } /* Name.Variable.Class */
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
-.highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
@@ -11726,7 +11699,9 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
-}@media print {
+}
+
+@media print {
   div.cell {
     display: block;
     page-break-inside: avoid;
@@ -11747,7 +11722,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -11771,55 +11746,36 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="SEM&#20998;&#26512;&#12391;&#24517;&#35201;&#12392;&#12394;&#12427;R&#12398;&#12497;&#12483;&#12465;&#12540;&#12472;&#12398;&#23566;&#20837;">SEM&#20998;&#26512;&#12391;&#24517;&#35201;&#12392;&#12394;&#12427;R&#12398;&#12497;&#12483;&#12465;&#12540;&#12472;&#12398;&#23566;&#20837;<a class="anchor-link" href="#SEM&#20998;&#26512;&#12391;&#24517;&#35201;&#12392;&#12394;&#12427;R&#12398;&#12497;&#12483;&#12465;&#12540;&#12472;&#12398;&#23566;&#20837;">&#194;&#182;</a></h1><p>openxlsx、psych、GPArotation、lavaan、semPlotの五つを導入します。たとえば、openxlsxは、「openxlsx R package」で検索すると、openxlsxのパッケージが登録されている <a href="https://cran.r-project.org/web/packages/openxlsx/index.html">CRAN - Package openxlsx</a> を見つけることができます。この中で、Windows用のバイナリーファイルは「Windows binaries」の「r-release」のところにあります。Mac用のバイナリーファイルは「OS X El Capitan binaries」の「r-releaseのところにあります。古い版もこのページから辿ることができます。以下は五つのパッケージの登録されている場所(URL)です。</p>
-<ol>
-<li><a href="https://cran.r-project.org/web/packages/openxlsx/index.html">openxlsx</a></li>
-<li><a href="https://cran.r-project.org/web/packages/psych/index.html">psych</a></li>
-<li><a href="https://cran.r-project.org/web/packages/GPArotation/index.html">GPArotation</a></li>
-<li><a href="https://cran.r-project.org/web/packages/lavaan/index.html">lavaan</a></li>
-<li><a href="https://cran.r-project.org/web/packages/semPlot/index.html">semPlot</a></li>
-</ol>
-
+<h1 id="&#26085;&#26412;&#35486;&#12501;&#12457;&#12531;&#12488;&#12398;&#35373;&#23450;(&#12414;&#12392;&#12417;)">&#26085;&#26412;&#35486;&#12501;&#12457;&#12531;&#12488;&#12398;&#35373;&#23450;(&#12414;&#12392;&#12417;)<a class="anchor-link" href="#&#26085;&#26412;&#35486;&#12501;&#12457;&#12531;&#12488;&#12398;&#35373;&#23450;(&#12414;&#12392;&#12417;)">&#182;</a></h1>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>このノートブックと同じフォルダーにr-releaseがあり、その下にOS別の三つのフォルダーがあります。</p>
-<ul>
-<li>r-release<ul>
-<li>win-binary</li>
-<li>mac-binary</li>
-<li>source</li>
+<h3 id="&#26085;&#26412;&#35486;&#34920;&#31034;&#30906;&#35469;&#29992;&#12503;&#12525;&#12464;&#12521;&#12512;">&#26085;&#26412;&#35486;&#34920;&#31034;&#30906;&#35469;&#29992;&#12503;&#12525;&#12464;&#12521;&#12512;<a class="anchor-link" href="#&#26085;&#26412;&#35486;&#34920;&#31034;&#30906;&#35469;&#29992;&#12503;&#12525;&#12464;&#12521;&#12512;">&#182;</a></h3><ul>
+<li><a href="http://qiita.com/keisuke-nakata/items/2309764d21438645f6b9">【Seaborn】日本語を表示する (フォントを変更する)</a></li>
 </ul>
-</li>
-</ul>
-<p>そのそれぞれの下に、上記の五つのパッケージが置いてあります。
-ここでは、Windows版のパッケージのインストール方法を示します。</p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.-&#29694;&#22312;&#12398;&#12501;&#12457;&#12523;&#12480;&#12540;&#12434;&#30906;&#35469;&#12375;&#12414;&#12377;&#12290;">1. &#29694;&#22312;&#12398;&#12501;&#12457;&#12523;&#12480;&#12540;&#12434;&#30906;&#35469;&#12375;&#12414;&#12377;&#12290;<a class="anchor-link" href="#1.-&#29694;&#22312;&#12398;&#12501;&#12457;&#12523;&#12480;&#12540;&#12434;&#30906;&#35469;&#12375;&#12414;&#12377;&#12290;">&#194;&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="kp">getwd</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">font</span><span class="o">=</span><span class="s1">&#39;IPAexGothic&#39;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]);</span>  <span class="n">sns</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;tofu - 豆腐&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11830,115 +11786,311 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area">
-
-<div class="prompt"></div>
+<div class="output_area"><div class="prompt output_prompt">Out[10]:</div>
 
 
-
-<div class="output_html rendered_html output_subarea ">
-'G:/GitHub/DSPR/SEM'
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;matplotlib.text.Text at 0x11793948ba8&gt;</pre>
 </div>
 
 </div>
 
-</div>
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+2jkF2n5WAAAAAElFTkSuQmCC
+"
+>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.-Windows&#29256;&#12398;&#12497;&#12483;&#12465;&#12540;&#12472;&#12398;&#12501;&#12457;&#12523;&#12480;&#12540;&#12395;&#31227;&#21205;&#12375;&#12414;&#12377;&#12290;">2. Windows&#29256;&#12398;&#12497;&#12483;&#12465;&#12540;&#12472;&#12398;&#12501;&#12457;&#12523;&#12480;&#12540;&#12395;&#31227;&#21205;&#12375;&#12414;&#12377;&#12290;<a class="anchor-link" href="#2.-Windows&#29256;&#12398;&#12497;&#12483;&#12465;&#12540;&#12472;&#12398;&#12501;&#12457;&#12523;&#12480;&#12540;&#12395;&#31227;&#21205;&#12375;&#12414;&#12377;&#12290;">&#194;&#182;</a></h3>
+
 </div>
 </div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="kp">setwd</span><span class="p">(</span><span class="s">&quot;r-release/win-binary&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.font_manager</span> <span class="k">as</span> <span class="nn">fm</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3.-&#20116;&#12388;&#12398;&#12497;&#12483;&#12465;&#12540;&#12472;&#12434;&#12452;&#12531;&#12473;&#12488;&#12540;&#12523;&#12375;&#12414;&#12377;&#12290;">3. &#20116;&#12388;&#12398;&#12497;&#12483;&#12465;&#12540;&#12472;&#12434;&#12452;&#12531;&#12473;&#12488;&#12540;&#12523;&#12375;&#12414;&#12377;&#12290;<a class="anchor-link" href="#3.-&#20116;&#12388;&#12398;&#12497;&#12483;&#12465;&#12540;&#12472;&#12434;&#12452;&#12531;&#12473;&#12488;&#12540;&#12523;&#12375;&#12414;&#12377;&#12290;">&#194;&#182;</a></h3>
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span>install.packages<span class="p">(</span><span class="kt">c</span><span class="p">(</span><span class="s">&quot;openxlsx_4.0.17.zip&quot;</span><span class="p">,</span> <span class="s">&quot;psych_1.7.5.zip&quot;</span><span class="p">,</span> <span class="s">&quot;GPArotation_2014.11-1.zip&quot;</span><span class="p">,</span> 
-                   <span class="s">&quot;lavaan_0.5-23.1097.zip&quot;</span><span class="p">,</span> <span class="s">&quot;semPlot_1.1.zip&quot;</span><span class="p">),</span> 
-                 repos <span class="o">=</span> <span class="kc">NULL</span><span class="p">,</span> conrib.url<span class="o">=</span><span class="s">&quot;win.binary&quot;</span><span class="p">,</span> type <span class="o">=</span> <span class="s">&quot;win.binary&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fonts</span> <span class="o">=</span> <span class="n">fm</span><span class="o">.</span><span class="n">findSystemFonts</span><span class="p">()</span>
+<span class="c1">#fonts</span>
+<span class="c1"># &#39;c:\\windows\\fonts\\ipaexg.ttf&#39;,</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>Installing packages into &#39;C:/work/R/win-library/3.3&#39;
-(as &#39;lib&#39; is unspecified)
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>package &#39;openxlsx&#39; successfully unpacked and MD5 sums checked
-package &#39;psych&#39; successfully unpacked and MD5 sums checked
-package &#39;GPArotation&#39; successfully unpacked and MD5 sums checked
-package &#39;lavaan&#39; successfully unpacked and MD5 sums checked
-package &#39;semPlot&#39; successfully unpacked and MD5 sums checked
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="4.-&#29694;&#22312;&#12398;&#12501;&#12457;&#12523;&#12480;&#12540;&#12398;&#20301;&#32622;&#12434;&#20803;&#12395;&#12418;&#12393;&#12375;&#12414;&#12377;&#12290;">4. &#29694;&#22312;&#12398;&#12501;&#12457;&#12523;&#12480;&#12540;&#12398;&#20301;&#32622;&#12434;&#20803;&#12395;&#12418;&#12393;&#12375;&#12414;&#12377;&#12290;<a class="anchor-link" href="#4.-&#29694;&#22312;&#12398;&#12501;&#12457;&#12523;&#12480;&#12540;&#12398;&#20301;&#32622;&#12434;&#20803;&#12395;&#12418;&#12393;&#12375;&#12414;&#12377;&#12290;">&#194;&#182;</a></h3>
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="kp">setwd</span><span class="p">(</span><span class="s">&quot;../..&quot;</span><span class="p">)</span>
-<span class="kp">getwd</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">fonts</span><span class="p">:</span>
+    <span class="n">font</span> <span class="o">=</span> <span class="n">fm</span><span class="o">.</span><span class="n">FontProperties</span><span class="p">(</span><span class="n">fname</span><span class="o">=</span><span class="n">f</span><span class="p">)</span>
+    <span class="n">l</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">f</span><span class="p">,</span> <span class="n">font</span><span class="o">.</span><span class="n">get_name</span><span class="p">(),</span> <span class="n">font</span><span class="o">.</span><span class="n">get_family</span><span class="p">()))</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;path&#39;</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;family&#39;</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;path&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="s1">&#39;ipaexg&#39;</span> <span class="ow">in</span> <span class="n">s</span><span class="p">)]</span>
 </pre></div>
 
 </div>
@@ -11949,14 +12101,23 @@ package &#39;semPlot&#39; successfully unpacked and MD5 sums checked
 <div class="output">
 
 
-<div class="output_area">
+<div class="output_area"><div class="prompt output_prompt">Out[5]:</div>
 
-<div class="prompt"></div>
-
-
-
-<div class="output_html rendered_html output_subarea ">
-'G:/GitHub/DSPR/SEM'
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>path</th>
+      <th>name</th>
+      <th>family</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+</div>
 </div>
 
 </div>
@@ -11965,120 +12126,140 @@ package &#39;semPlot&#39; successfully unpacked and MD5 sums checked
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Mac&#12398;&#22580;&#21512;">Mac&#12398;&#22580;&#21512;<a class="anchor-link" href="#Mac&#12398;&#22580;&#21512;">&#194;&#182;</a></h3><ul>
-<li><a href="https://cran.r-project.org/bin/macosx/RMacOSX-FAQ.html#Installation-of-packages">R for Mac OS X FAQ</a>を参考にしてください。(Macの場合は、ソースからのインストールもありです。)</li>
-</ul>
+
+<pre><code># http://qiita.com/keisuke-nakata/items/2309764d21438645f6b9
+import matplotlib as mpl
+import os
+#print(mpl.matplotlib_fname())
+site_packages = os.path.dirname(os.path.dirname(os.path.dirname(mpl.matplotlib_fname())))
+#print('+ site_packages = {0}'.format(site_packages))
+seaborn_dir = '{0}/seaborn'.format(site_packages)
+#print('+ seaborn_dir = {0}'.format(seaborn_dir))
+fonts_dir = '{0}/mpl-data/fonts/ttf'.format(os.path.dirname(os.path.dirname(mpl.matplotlib_fname())))
+if 'ipaexg.ttf' in os.listdir(fonts_dir):
+    print('+ {0} に\n日本語フォントがあります。'.format(fonts_dir))
+    print('「1. 日本語フォントのインストール」は不要です。')
+    print('「2. rcmod.pyの編集」から始めてください。')
+if 'rcmod.py' in os.listdir(seaborn_dir):
+    print('+ {0} に\nrcmod.py があります。'.format(seaborn_dir))
+
++ C:\Users\user_name\AppData\Local\conda\conda\envs\py35\lib\site-packages\matplotlib/mpl-data/fonts/ttf に
+日本語フォントがあります。
+「1. 日本語フォントのインストール」は不要です。
+「2. rcmod.pyの編集」から始めてください。
++ C:\Users\user_name\AppData\Local\conda\conda\envs\py35\lib\site-packages/seaborn に</code></pre>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#21442;&#32771;(&#12381;&#12398;&#20182;)">&#21442;&#32771;(&#12381;&#12398;&#20182;)<a class="anchor-link" href="#&#21442;&#32771;(&#12381;&#12398;&#20182;)">&#194;&#182;</a></h3><ul>
-<li>Winodws<ul>
-<li><a href="http://researchmap.jp/jofdl1aug-1781589/">オフラインでRにパッケージをインストールする - researchmap</a></li>
+<h1 id="1.-&#26085;&#26412;&#35486;&#12501;&#12457;&#12531;&#12488;&#12398;&#12452;&#12531;&#12473;&#12488;&#12540;&#12523;">1. &#26085;&#26412;&#35486;&#12501;&#12457;&#12531;&#12488;&#12398;&#12452;&#12531;&#12473;&#12488;&#12540;&#12523;<a class="anchor-link" href="#1.-&#26085;&#26412;&#35486;&#12501;&#12457;&#12531;&#12488;&#12398;&#12452;&#12531;&#12473;&#12488;&#12540;&#12523;">&#182;</a></h1><ul>
+<li><a href="http://kaisk.hatenadiary.com/entry/2015/02/15/215831">【matplotlib】日本語の設定</a><ul>
+<li>今回はIPAexフォントを使うことにします。ダウンロードして解凍すると、ipaexg.ttfというファイルがあるはずです。 それを、先ほど見つけたmatplotlibのデフォルト設定ファイルの置いてあるフォルダにあるfonts/ttf/フォルダにコピーしてください。</li>
+<li>なお、このfontsフォルダは、matplotlibをバージョンアップなどすると書き換えられてしまうおそれがあるようです。 もしもそうした事態が起きたら、もう一度ipaexg.ttfをコピーしてください。</li>
 </ul>
 </li>
-<li>Mac<ul>
-<li><a href="http://qiita.com/sjuny/items/18d992056b14d36fc442">MacでRパッケージをインストールする際のトラブル対応（メモ） - Qiita</a></li>
-</ul>
-</li>
+<li><a href="https://ja.osdn.net/projects/ipafonts/releases/49986">リリース IPA Fonts/IPAex Fonts 2 書体パック_IPAexフォント（ver.001.03） - IPAフォント - OSDN</a></li>
 </ul>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#12452;&#12531;&#12473;&#12488;&#12540;&#12523;&#12364;&#12358;&#12414;&#12367;&#12391;&#12365;&#12383;&#12425;-&#12371;&#12371;&#12434;&#12463;&#12522;&#12483;&#12463;&#12375;&#12390;-SEM_R.ipynb-&#12434;&#31435;&#12385;&#19978;&#12370;&#12390;&#12367;&#12384;&#12373;&#12356;&#12290;">&#12452;&#12531;&#12473;&#12488;&#12540;&#12523;&#12364;&#12358;&#12414;&#12367;&#12391;&#12365;&#12383;&#12425; <a href="SEM_R.ipynb">&#12371;&#12371;</a>&#12434;&#12463;&#12522;&#12483;&#12463;&#12375;&#12390; SEM_R.ipynb &#12434;&#31435;&#12385;&#19978;&#12370;&#12390;&#12367;&#12384;&#12373;&#12356;&#12290;<a class="anchor-link" href="#&#12452;&#12531;&#12473;&#12488;&#12540;&#12523;&#12364;&#12358;&#12414;&#12367;&#12391;&#12365;&#12383;&#12425;-&#12371;&#12371;&#12434;&#12463;&#12522;&#12483;&#12463;&#12375;&#12390;-SEM_R.ipynb-&#12434;&#31435;&#12385;&#19978;&#12370;&#12390;&#12367;&#12384;&#12373;&#12356;&#12290;">&#194;&#182;</a></h2><hr>
+<h1 id="2.-rcmod.py&#12398;&#32232;&#38598;">2. rcmod.py&#12398;&#32232;&#38598;<a class="anchor-link" href="#2.-rcmod.py&#12398;&#32232;&#38598;">&#182;</a></h1><ul>
+<li>rcmod.py をエディターで開き、81行目、82行目の</li>
+</ul>
+
+<pre><code>def set(context="notebook", style="darkgrid", palette="deep",
+        font="sans-serif", font_scale=1, color_codes=False, rc=None):</code></pre>
+<p>をコメントアウトし、下に</p>
+
+<pre><code>def set(context="notebook", style="darkgrid", palette="deep",
+        font="IPAexGothic", font_scale=1, color_codes=False, rc=None):</code></pre>
+<p>の2行を追記してください。そうすると、</p>
+
+<pre><code>#def set(context="notebook", style="darkgrid", palette="deep",
+#        font="sans-serif", font_scale=1, color_codes=False, rc=None):
+def set(context="notebook", style="darkgrid", palette="deep",
+        font="IPAexGothic", font_scale=1, color_codes=False, rc=None):</code></pre>
+<p>のようになります。</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#20633;&#24536;&#37682;">&#20633;&#24536;&#37682;<a class="anchor-link" href="#&#20633;&#24536;&#37682;">&#194;&#182;</a></h3><ul>
-<li>semPlotは動作確認していません。<ul>
-<li><a href="https://cran.r-project.org/web/packages/semPlot/index.html">CRAN - Package semPlot</a></li>
-</ul>
-</li>
-<li>インストールがうまくいかない場合(install.packageで書き込みができない場合があるようなので)、管理者でコマンドプロンプトを立ち上げて、 jupyter notebook を起動してみてください。</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Jupyter&#12391;&#12398;R&#12398;&#12450;&#12483;&#12503;&#12487;&#12540;&#12488;">Jupyter&#12391;&#12398;R&#12398;&#12450;&#12483;&#12503;&#12487;&#12540;&#12488;<a class="anchor-link" href="#Jupyter&#12391;&#12398;R&#12398;&#12450;&#12483;&#12503;&#12487;&#12540;&#12488;">&#194;&#182;</a></h3><ul>
-<li>jupyter notebookのRで
-<pre><code>update.packages()</code></pre>
-はできないようです。コマンドプロンプトで
-<pre><code>conda update --all</code></pre>
-によりアップデートします。</li>
-<li>参考<ul>
-<li>「r jupyter update.packages」で検索<ul>
-<li><a href="https://stackoverflow.com/questions/36341820/updating-r-that-is-used-within-ipython-jupyter">Updating R that is used within IPython/ Jupyter - Stack Overflow</a>  </li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#12493;&#12483;&#12488;&#32076;&#30001;&#12391;&#12497;&#12483;&#12465;&#12540;&#12472;&#12434;&#12452;&#12531;&#12473;&#12488;&#12540;&#12523;&#12377;&#12427;&#22580;&#21512;">&#12493;&#12483;&#12488;&#32076;&#30001;&#12391;&#12497;&#12483;&#12465;&#12540;&#12472;&#12434;&#12452;&#12531;&#12473;&#12488;&#12540;&#12523;&#12377;&#12427;&#22580;&#21512;<a class="anchor-link" href="#&#12493;&#12483;&#12488;&#32076;&#30001;&#12391;&#12497;&#12483;&#12465;&#12540;&#12472;&#12434;&#12452;&#12531;&#12473;&#12488;&#12540;&#12523;&#12377;&#12427;&#22580;&#21512;">&#194;&#182;</a></h3><p>普通はネット経由でパッケージをインストールしますが、ネット上のリポジトリーの指定がうまくいかない場合があります。日本にあるリポジトリーは  <a href="https://cran.ism.ac.jp">https://cran.ism.ac.jp</a> ですので、</p>
-
-<pre><code>repos = "https://cran.ism.ac.jp"
-lib = "C:/ProgramData/Anaconda2/R/library"
-
-install.packages("openxlsx", dependencies= T, repos=repos, lib = lib)
-install.packages("psych", dependencies= T, repos = repos, lib = lib)
-install.packages("GPArotation", dependencies= T, repos = repos, lib = lib)
-install.packages("lavaan", dependencies= T, repos=repos, lib = lib)</code></pre>
-<p>のように指定することができますが、 <a href="https://cran.ism.ac.jp">https://cran.ism.ac.jp</a> はときどき落ちています。</p>
 <ul>
-<li>(as 'lib' is unspecified)となる場合に lib を各PCの状況に合わせて変更します。</li>
+<li>次に192行目の</li>
 </ul>
 
+<pre><code>            "font.family": ["sans-serif"],</code></pre>
+<p>をコメントアウトし、下に</p>
+
+<pre><code>            "font.family": ["IPAexGothic"],</code></pre>
+<p>を追記してください。そうすると、</p>
+
+<pre><code>#            "font.family": ["sans-serif"],
+            "font.family": ["IPAexGothic"],</code></pre>
+<p>のようになります。</p>
+
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span>
-</pre></div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="3.-&#12461;&#12515;&#12483;&#12471;&#12517;&#12501;&#12449;&#12452;&#12523;&#12398;&#21066;&#38500;">3. &#12461;&#12515;&#12483;&#12471;&#12517;&#12501;&#12449;&#12452;&#12523;&#12398;&#21066;&#38500;<a class="anchor-link" href="#3.-&#12461;&#12515;&#12483;&#12471;&#12517;&#12501;&#12449;&#12452;&#12523;&#12398;&#21066;&#38500;">&#182;</a></h1><ul>
+<li>ユーザ設定ファイルの存在するフォルダにあるfontList.cacheもしくはfontList.py3k.cacheを削除する。</li>
+</ul>
+<h2 id="Windows&#12398;&#22580;&#21512;">Windows&#12398;&#22580;&#21512;<a class="anchor-link" href="#Windows&#12398;&#22580;&#21512;">&#182;</a></h2><ul>
+<li>C:\Users\ユーザー名.matplotlibの下の<ul>
+<li>fontList.cache</li>
+<li>fontList.py3k.cache
+を削除します。</li>
+</ul>
+</li>
+</ul>
+<h2 id="Ubuntu&#12398;&#22580;&#21512;">Ubuntu&#12398;&#22580;&#21512;<a class="anchor-link" href="#Ubuntu&#12398;&#22580;&#21512;">&#182;</a></h2>
+<pre><code>* rm ~/.cache/matplotlib/fontList.cache
+* rm ~/.cache/matplotlib/fontList.py3k.cache</code></pre>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="4.-&#12502;&#12521;&#12454;&#12470;&#12540;&#12434;&#12377;&#12409;&#12390;&#38281;&#12376;&#12390;&#12289;jupyter&#12434;&#20877;&#36215;&#21205;&#12377;&#12427;&#12290;">4. &#12502;&#12521;&#12454;&#12470;&#12540;&#12434;&#12377;&#12409;&#12390;&#38281;&#12376;&#12390;&#12289;jupyter&#12434;&#20877;&#36215;&#21205;&#12377;&#12427;&#12290;<a class="anchor-link" href="#4.-&#12502;&#12521;&#12454;&#12470;&#12540;&#12434;&#12377;&#12409;&#12390;&#38281;&#12376;&#12390;&#12289;jupyter&#12434;&#20877;&#36215;&#21205;&#12377;&#12427;&#12290;">&#182;</a></h1><ul>
+<li>jupyterの再起動では足りない。</li>
+</ul>
 
+<pre><code>jupyter notebook</code></pre>
+
+</div>
+</div>
 </div>
     </div>
   </div>
 </body>
-
- 
-
-
 </html>
