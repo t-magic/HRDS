@@ -1,0 +1,70 @@
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper { position:absolute; top:0; left:0; z-index:9999; -webkit-transform: translate3d(0,0,0); }
+#cboxWrapper { max-width:none; }
+#cboxOverlay { position:fixed; width:100%; height:100%; }
+#cboxMiddleLeft, #cboxBottomLeft { clear:left; }
+#cboxContent { position:relative; }
+#cboxLoadedContent { overflow:auto; -webkit-overflow-scrolling: touch; }
+#cboxTitle { margin:0; }
+#cboxLoadingOverlay, #cboxLoadingGraphic { position:absolute; top:0; left:0; width:100%; height:100%; }
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow { cursor:pointer; }
+.cboxPhoto { float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic; }
+.cboxIframe { width:100%; height:100%; display:block; border:0; padding:0; margin:0; }
+#colorbox, #cboxContent, #cboxLoadedContent { box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box; }
+
+/*
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay { background:#fff; }
+#colorbox { outline:0; transform:translateY(30px); transition:transform .7s; }
+    #cboxContent { margin-top:32px; overflow:visible; background:#fff; }
+        .cboxIframe { background:#fff; }
+        #cboxError { padding:50px; border:1px solid #ccc; }
+        #cboxLoadedContent { background:#fff; padding:1px; }
+        #cboxLoadingGraphic { }
+        #cboxLoadingOverlay { background:#fff; }
+        #cboxTitle { position:absolute; top:-22px; left:0; color:#000; }
+        #cboxCurrent { position:absolute; top:-22px; right:205px; text-indent:-9999px; }
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose { border:0; padding:0; margin:0; font-size: 0; text-indent: 100%; white-space: nowrap; overflow: hidden; position:absolute; }
+
+        /* avoid outlines on :active (mouse click), but preserve outlines on :focus (tabbed navigating) */
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active { outline:0; }
+
+        #cboxPrevious, #cboxNext { width: auto; margin: auto; padding: 0 5px; bottom: -30px; background: transparent; }
+        #cboxPrevious::before, #cboxNext::before { content: ""; width: 17px; height: 17px; border-top: 1px solid #bec8d2; border-right: 1px solid #bec8d2; display: block; }
+        #cboxPrevious:hover::before, #cboxNext:hover::before { border-color: #0b52a4; }
+        #cboxPrevious { left: 0; }
+        #cboxPrevious::before { -ms-transform: rotate(-135deg); -webkit-transform: rotate(-135deg); transform: rotate(-135deg); }
+        #cboxNext { right: 0; }
+        #cboxNext::before { -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+        #cboxClose { opacity:0; transition:opacity .3s; width: 24px; height: 24px; background: url(../images/icon_modal_close.png) 0 0 / 100% auto no-repeat; top: 0; right: 0; }
+        .is_colorbox_imgOpen #cboxClose { top: 0; right: -50px; }
+        .is_colorbox_loaded #cboxClose { opacity:1; }
+        #colorbox.is_colorbox_loaded { transform:translateY(0); }
+        #cboxClose:hover { opacity: .6; }
+        .cboxSlideshow_on #cboxPrevious, .cboxSlideshow_off #cboxPrevious { right:66px; }
+        .cboxSlideshow_on #cboxSlideshow { background-position:-75px -25px; right:44px; }
+        .cboxSlideshow_on #cboxSlideshow:hover { background-position:-100px -25px; }
+        .cboxSlideshow_off #cboxSlideshow { background-position:-100px 0; right:44px; }
+        .cboxSlideshow_off #cboxSlideshow:hover { background-position:-75px -25px; }
+
+/* TB/SP時のcloseボタン調整 */
+@media screen and (max-width: 1007px) {
+  #cboxClose { right: 30px;}
+}
+
+/* sp時にスクロールバーが出ないように記述 */
+@media screen and (max-width: 540px) {
+
+    .is_colorbox_imgOpen #cboxClose { top: -30px; right: 0; }
+    #colorbox.is_colorbox_inlineOpen { width: 100% !important; overflow-y: scroll !important; }
+    .is_colorbox_inlineOpen #cboxLoadedContent { overflow: visible !important; }
+    .is_colorbox_inlineOpen #cboxClose { top:0; right: 7%; }
+ }
