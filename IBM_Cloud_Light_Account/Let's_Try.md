@@ -60,3 +60,17 @@ https://console-regional.au-syd.bluemix.net/
    ![](pict/WS000252.JPG)
 
    ![](pict/WS000253.JPG)
+
+### ここかで来るにはどうするかを振り返る。
+
+   ![](pict/WS000268.JPG)
+
+   ![](pict/WS000269.JPG)
+
+   ![](pict/WS000270.JPG)
+
+   ![](pict/WS000271.JPG)
+
+   ![](pict/WS000272.JPG)
+
+   ![](pict/WS000273.JPG)
