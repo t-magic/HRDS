@@ -87,3 +87,5 @@
 * https://dataplatform.ibm.com/home?context=analytics
 
    ![](pict/WS000275.JPG)
+
+   ![](pict/WS000278.JPG)
