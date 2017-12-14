@@ -21,7 +21,9 @@
 
    ![](pict/WS000263.JPG)
 
-https://console-regional.au-syd.bluemix.net/
+* 以下は、操作がここで並べた順序ではないので、多少異なるかもしれません。
+
+   * https://console-regional.au-syd.bluemix.net/
 
    ![](pict/WS000235.JPG)
 
@@ -53,15 +55,17 @@ https://console-regional.au-syd.bluemix.net/
 
    ![](pict/WS000249.JPG)
 
+* ファイルのアップロードの方法がわからなかったので、聞いてみました。
+
    ![](pict/WS000250.JPG)
 
    ![](pict/WS000251.JPG)
 
-   ![](pict/WS000252.JPG)
+* 説明通りにやってみました。
 
    ![](pict/WS000253.JPG)
 
-### ここかで来るにはどうするかを振り返る。
+### ここに来るにはどうするかを振り返ってみます。
 
    ![](pict/WS000268.JPG)
 
@@ -69,8 +73,17 @@ https://console-regional.au-syd.bluemix.net/
 
    ![](pict/WS000270.JPG)
 
+* さらに上までもどってみます。
+
    ![](pict/WS000271.JPG)
 
    ![](pict/WS000272.JPG)
 
    ![](pict/WS000273.JPG)
+
+   ![](pict/WS000274.JPG)
+
+## 最初はどこから始めるかを聞いてみます。
+* https://dataplatform.ibm.com/home?context=analytics
+
+   ![](pict/WS000275.JPG)
