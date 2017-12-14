@@ -1,4 +1,7 @@
-## ibm cloud light account
+## 学習するには
+* https://bigdatauniversity.com/
+
+## IBM Cloud Light Accountをつくるには
 * https://www.ibm.com/cloud-computing/jp/ja/bluemix/lite-account/
 
    ![](pict/WS000256.JPG)
