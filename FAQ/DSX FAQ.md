@@ -55,7 +55,27 @@ There you can click on the Name field to change the notebook name.
 
 ---
 
-# GitHub、Gistへの保存
+# ノートブックをインポートするには
+
+![](pict/WS000043.JPG)
+
+![](pict/WS000044.JPG)
+
+![](pict/WS000045.JPG)
+
+![](pict/WS000046.JPG)
+
+![](pict/WS000047.JPG)
+
+![](pict/WS000048.JPG)
+
+![](pict/WS000049.JPG)
+
+
+
+---
+
+# GitHub、Gistへ保存するには
 
 * [Publish notebooks on GitHub - IBM Data Science Experience](https://datascience.ibm.com/docs/content/analyze-data/github-integration.html)
 * [Data Science Experience: Publish notebooks to Github](https://youtu.be/EplLENOla9I)  
