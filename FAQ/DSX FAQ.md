@@ -23,6 +23,8 @@
 
 ![](pict/WS000014.JPG)
 
+---
+
 ## notebook名を変更するには
 
 When you open your notebook, you should see an "I" "Notebook Info" icon (see below)
@@ -36,6 +38,8 @@ There you can click on the Name field to change the notebook name.
 ![](pict/WS000011.JPG)
 
 ![](pict/WS000021.JPG)
+
+---
 
 ## アップロードしたCSVファイルをノートブックで使用するには
 
@@ -58,7 +62,6 @@ There you can click on the Name field to change the notebook name.
 視聴回数 249 回, 2:34  
 ![](https://i.ytimg.com/vi/EplLENOla9I/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCoazDr6i8wGQpRwdulxoxKbDyS6A)
 
-
 ---
 
 ![](pict/WS000022.JPG)
@@ -71,11 +74,11 @@ There you can click on the Name field to change the notebook name.
 
 ![](pict/WS000026.JPG)
 
+![](pict/WS000029.JPG)
+
 ![](pict/WS000027.JPG)
 
 ![](pict/WS000028.JPG)
-
-![](pict/WS000029.JPG)
 
 ![](pict/WS000030.JPG)
 
