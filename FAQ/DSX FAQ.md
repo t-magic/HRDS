@@ -2,7 +2,7 @@
 # DSX FAQ
 
 ## DSXに行くには
-* [IBM Data Science Experience](https://dataplatform.ibm.com/projects/110284f6-c045-486f-b60e-c89d058d973a/assets?context=analytics) に行きます。
+* [IBM Data Science Experience(https://dataplatform.ibm.com/home?context=analytics)](https://dataplatform.ibm.com/home?context=analytics) に行きます。
 
 ## CSVファイルをアップロードして、ノートブックで使用するには
 
