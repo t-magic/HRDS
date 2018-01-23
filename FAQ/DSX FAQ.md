@@ -40,20 +40,6 @@ There you can click on the Name field to change the notebook name.
 
 ---
 
-## アップロードしたCSVファイルをノートブックで使用するには
-
-![](pict/WS000016.JPG)
-
-![](pict/WS000017.JPG)
-
-![](pict/WS000018.JPG)
-
-![](pict/WS000019.JPG)
-
-![](pict/WS000020.JPG)
-
----
-
 ## CSVファイルをアップロードして、ノートブックで使用するには
 
 ![](pict/WS000016.JPG)
