@@ -2,7 +2,7 @@
 # DSX FAQ
 
 # DSXに行くには
-* [IBM Data Science Experience(https://dataplatform.ibm.com/home?context=analytics)](https://dataplatform.ibm.com/home?context=analytics) に行きます。
+* IBM Data Science Experience([https://dataplatform.ibm.com/home?context=analytics](https://dataplatform.ibm.com/home?context=analytics) )に行きます。
 
 ---
 
