@@ -25,6 +25,24 @@
 
 ---
 
+# ノートブックをインポートするには
+
+![](pict/WS000043.JPG)
+
+![](pict/WS000044.JPG)
+
+![](pict/WS000045.JPG)
+
+![](pict/WS000046.JPG)
+
+![](pict/WS000047.JPG)
+
+![](pict/WS000048.JPG)
+
+![](pict/WS000049.JPG)
+
+---
+
 ## notebook名を変更するには
 
 When you open your notebook, you should see an "I" "Notebook Info" icon (see below)
@@ -55,25 +73,7 @@ There you can click on the Name field to change the notebook name.
 
 ---
 
-# ノートブックをインポートするには
 
-![](pict/WS000043.JPG)
-
-![](pict/WS000044.JPG)
-
-![](pict/WS000045.JPG)
-
-![](pict/WS000046.JPG)
-
-![](pict/WS000047.JPG)
-
-![](pict/WS000048.JPG)
-
-![](pict/WS000049.JPG)
-
-
-
----
 
 # GitHub、Gistへ保存するには
 
