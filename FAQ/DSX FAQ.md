@@ -4,25 +4,6 @@
 ## DSXに行くには
 * [IBM Data Science Experience(https://dataplatform.ibm.com/home?context=analytics)](https://dataplatform.ibm.com/home?context=analytics) に行きます。
 
-## CSVファイルをアップロードして、ノートブックで使用するには
-
-![](pict/WS000016.JPG)
-
-![](pict/WS000017.JPG)
-
-![](pict/WS000018.JPG)
-
-![](pict/WS000019.JPG)
-
-![](pict/WS000020.JPG)
-
-
-## ノートブック(.ipynb)をアップロードするには
-
-![](pict/WS000013.JPG)
-
-![](pict/WS000014.JPG)
-
 ---
 
 # ノートブックをインポートするには
@@ -73,7 +54,26 @@ There you can click on the Name field to change the notebook name.
 
 ---
 
+## CSVファイルをアップロードして、ノートブックで使用するには
 
+![](pict/WS000016.JPG)
+
+![](pict/WS000017.JPG)
+
+![](pict/WS000018.JPG)
+
+![](pict/WS000019.JPG)
+
+![](pict/WS000020.JPG)
+
+
+## ノートブック(.ipynb)をアップロードするには
+
+![](pict/WS000013.JPG)
+
+![](pict/WS000014.JPG)
+
+---
 
 # GitHub、Gistへ保存するには
 
