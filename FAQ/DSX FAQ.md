@@ -6,6 +6,14 @@
 
 ---
 
+## ノートブック(.ipynb)をアップロードするには
+
+![](pict/WS000013.JPG)
+
+![](pict/WS000014.JPG)
+
+---
+
 # ノートブックをインポートするには
 
 ![](pict/WS000043.JPG)
@@ -51,13 +59,6 @@ There you can click on the Name field to change the notebook name.
 ![](pict/WS000019.JPG)
 
 ![](pict/WS000020.JPG)
-
-
-## ノートブック(.ipynb)をアップロードするには
-
-![](pict/WS000013.JPG)
-
-![](pict/WS000014.JPG)
 
 ---
 
