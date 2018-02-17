@@ -13,7 +13,7 @@
 * ノートブックを開きます。
 
  ![](pict/WS000052.JPG)
- 
+
 ---
 
 ## ノートブック(.ipynb)をアップロードするには
@@ -62,6 +62,7 @@ There you can click on the Name field to change the notebook name.
 
 ![](pict/WS000016.JPG)
 
+* ローカルファイルをドラッグ＆ドロップするか、ダイアログボックスを開いて選択して、アップロードします。そうすると、ファイル名が表示されます。左側のノートブックで空白のセルを選択した状態で、右側のファイル名の下の「insert to code」をクリックします。
 ![](pict/WS000017.JPG)
 
 ![](pict/WS000018.JPG)
