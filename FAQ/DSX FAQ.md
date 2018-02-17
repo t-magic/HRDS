@@ -122,3 +122,11 @@ There you can click on the Name field to change the notebook name.
 ![](pict/WS000041.JPG)
 
 ![](pict/WS000042.JPG)
+
+---
+
+# PythonやRのソースプログラムをインポートするには
+
+## 次のWebページをご覧ください。
+
+* [Import scripts into a notebook - IBM Data Science Experience](https://datascience.ibm.com/docs/content/analyze-data/add-script-to-notebook.html?context=analytics)
