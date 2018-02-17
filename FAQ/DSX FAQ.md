@@ -4,6 +4,16 @@
 # DSXに行くには
 * IBM Data Science Experience([https://dataplatform.ibm.com/home?context=analytics](https://dataplatform.ibm.com/home?context=analytics) )に行きます。
 
+ ![](pict/WS000050.JPG)
+
+* スクロールします。
+
+ ![](pict/WS000051.JPG)
+
+* ノートブックを開きます。
+
+ ![](pict/WS000052.JPG)
+ 
 ---
 
 ## ノートブック(.ipynb)をアップロードするには
