@@ -2,9 +2,7 @@
 
 ![](pict/copejuku.JPG)
 
-#### 今後の情報閲覧のために、[コペ塾](https://github.com/t-magic/COPERNICUS)に参加される方は、GitHubのアカウントを作成しておいてください。作成には、[ここ](https://youtu.be/ezxRcdJ8glM)または[ここ](https://youtu.be/RHj-859yXWo?t=94)を参考にしてください。
-
-
+#### 今後の情報閲覧のために、[コペ塾](https://github.com/t-magic/COPERNICUS)に参加される方は、GitHubのアカウントを作成してください。作成には、[ここ](https://youtu.be/ezxRcdJ8glM)または[ここ](https://youtu.be/RHj-859yXWo?t=94)を参考にしてください。
 ---
 # HRDS
 * [ホームページ](https://t-magic.github.io/HRDS/)  
