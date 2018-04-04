@@ -2,6 +2,8 @@
 ![](pict/copejuku.JPG)
 
 ---
+### [コペ塾」(https://github.com/t-magic/COPERNICUS)に参加される方は、GitHubでユーザー登録をしておいてください。
+
 # HRDS
 * [ホームページ](https://t-magic.github.io/HRDS/)  
 * [リポジトリー](https://github.com/t-magic/HRDS/)  
