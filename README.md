@@ -1,18 +1,5 @@
 ### 2018年4月13日(金)午後7時から以下の勉強会を始めます。
-### [コペ塾](https://github.com/t-magic/COPERNICUS)に参加される方は、GitHubのアカウントを作成しておいてください。作成には、[ここ](https://youtu.be/RHj-859yXWo?t=94)または[ここ](https://youtu.be/ezxRcdJ8glM)を参考にしてください。
-## 2. (できれば)GitHubのアカウント作成
-アカウント作成後、ユーザー名をサイト管理者(舘野)にお知らせください。
-* How to Create a GitHub Account • A Quick Look
 
- [![](https://i.ytimg.com/vi/ezxRcdJ8glM/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDAWj49JpX_ngEiLEeHfwMxTVM2Eg)]()
-
-または
-
-* Git入門：GitHubのアカウントを作る｜lynda.com 日本版
-
- [![](https://i.ytimg.com/vi/RHj-859yXWo/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDtN_loLgVpeY1SeQ2aY2xpR9bhCQ)]()
-* (先頭から1分34秒目～)
-(できれば)GitHubのアカウント作成
 ![](pict/copejuku.JPG)
 
 ---
