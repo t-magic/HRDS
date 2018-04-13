@@ -1,5 +1,5 @@
 ### 2018年4月13日(金)午後7時から以下の勉強会を始めます。
-
+### ユーザー登録は https://github.com/t-magic/COPERNICUS/invitations をクリックしてください。
 ![](pict/copejuku.JPG)
 
 #### 今後の情報閲覧のために、[コペ塾](https://github.com/t-magic/COPERNICUS)に参加される方は、GitHubのアカウントを作成してください。作成には、[ここ](https://youtu.be/ezxRcdJ8glM)または[ここ](https://youtu.be/RHj-859yXWo?t=94)を参考にしてください。
