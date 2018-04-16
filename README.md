@@ -1,4 +1,4 @@
-### 2018年4月13日(金)午後7時から以下の勉強会を始めます。
+### 第2回目は、2018年5月15日(火)午後7時から以下の勉強会を始めます。
 ### ユーザー登録は https://github.com/t-magic/COPERNICUS/invitations をクリックしてください。
 ![](pict/copejuku.JPG)
 
