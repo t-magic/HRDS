@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_3367008bb64c4c319f83608128684529 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3367008bb64c4c319f83608128684529" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_3367008bb64c4c319f83608128684529 = L.map(
+                                  'map_3367008bb64c4c319f83608128684529',
+                                  {center: [41,-70],
+                                  zoom: 5,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_a13faed2b1944862b69ef4250ec4b7c4 = L.tileLayer(
+                'http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
+                {
+  "attribution": "google",
+  "detectRetina": false,
+  "maxNativeZoom": 20,
+  "maxZoom": 20,
+  "minZoom": 0,
+  "noWrap": false,
+  "subdomains": [
+    "mt0",
+    "mt1",
+    "mt2",
+    "mt3"
+  ]
+}
+                ).addTo(map_3367008bb64c4c319f83608128684529);
+        
+    
+            var tile_layer_f35e65aa531a457e976b42788e2f8b20 = L.tileLayer(
+                'http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
+                {
+  "attribution": "google",
+  "detectRetina": false,
+  "maxNativeZoom": 20,
+  "maxZoom": 20,
+  "minZoom": 0,
+  "noWrap": false,
+  "subdomains": [
+    "mt0",
+    "mt1",
+    "mt2",
+    "mt3"
+  ]
+}
+                ).addTo(map_3367008bb64c4c319f83608128684529);
+        
+    
+            var macro_element_ae684c9b647247e6898e2cb55d67cbf8 = L.tileLayer.wms(
+                'https://demo.boundlessgeo.com/geoserver/ows?',
+                {
+  "attribution": "",
+  "crs": null,
+  "format": "image/png",
+  "layers": "nasa:bluemarble",
+  "styles": "",
+  "transparent": false,
+  "uppercase": false,
+  "version": "1.1.1"
+}
+                ).addTo(map_3367008bb64c4c319f83608128684529);
+
+        
+    
+            var macro_element_e87c3b873e0c405c93da7ea7683a0a9f = L.tileLayer.wms(
+                'http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi',
+                {
+  "attribution": "Weather data \u00a9 2012 IEM Nexrad",
+  "crs": null,
+  "format": "image/png",
+  "layers": "nexrad-n0r-900913",
+  "styles": "",
+  "transparent": true,
+  "uppercase": false,
+  "version": "1.1.1"
+}
+                ).addTo(map_3367008bb64c4c319f83608128684529);
+
+        
+    
+            var layer_control_e96cb389dd8548a5908f17c98c48cacc = {
+                base_layers : { "google maps" : tile_layer_a13faed2b1944862b69ef4250ec4b7c4,"google street view" : tile_layer_f35e65aa531a457e976b42788e2f8b20,"bluemarble" : macro_element_ae684c9b647247e6898e2cb55d67cbf8, },
+                overlays : { "test" : macro_element_e87c3b873e0c405c93da7ea7683a0a9f, }
+                };
+            L.control.layers(
+                layer_control_e96cb389dd8548a5908f17c98c48cacc.base_layers,
+                layer_control_e96cb389dd8548a5908f17c98c48cacc.overlays,
+                {position: 'topright',
+                 collapsed: true,
+                 autoZIndex: true
+                }).addTo(map_3367008bb64c4c319f83608128684529);
+            
+                tile_layer_f35e65aa531a457e976b42788e2f8b20.remove();
+                macro_element_ae684c9b647247e6898e2cb55d67cbf8.remove();
+        
+</script>

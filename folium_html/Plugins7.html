@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_76becb42d44a4af2ad433fbb0cb84087 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="https://rawgit.com/nezasa/iso8601-js-period/master/iso8601.min.js"></script>
+    <script src="https://rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css" />
+    <link rel="stylesheet" href="http://apps.socib.es/Leaflet.TimeDimension/dist/leaflet.timedimension.control.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_76becb42d44a4af2ad433fbb0cb84087" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_76becb42d44a4af2ad433fbb0cb84087 = L.map(
+                                  'map_76becb42d44a4af2ad433fbb0cb84087',
+                                  {center: [56.096555,-3.64746],
+                                  zoom: 5,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_84553ec3000b458a90167dfab080eb9e = L.tileLayer(
+                'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxNativeZoom": 18,
+  "maxZoom": 18,
+  "minZoom": 0,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_76becb42d44a4af2ad433fbb0cb84087);
+        
+    
+            L.Control.TimeDimensionCustom = L.Control.TimeDimension.extend({
+                _getDisplayDateFormat: function(date){
+                    var newdate = new moment(date);
+                    console.log(newdate)
+                    return newdate.format("YYYY/MM/DD");
+                }
+            });
+            map_76becb42d44a4af2ad433fbb0cb84087.timeDimension = L.timeDimension({period:"P1M"});
+            var timeDimensionControl = new L.Control.TimeDimensionCustom({
+  "autoPlay": false,
+  "loopButton": true,
+  "maxSpeed": 1,
+  "minSpeed": 0.1,
+  "playerOptions": {
+    "loop": false,
+    "startOver": true,
+    "transitionTime": 200
+  },
+  "position": "bottomleft",
+  "timeSliderDragUpdate": true
+});
+            map_76becb42d44a4af2ad433fbb0cb84087.addControl(this.timeDimensionControl);
+
+            console.log("");
+
+            var geoJsonLayer = L.geoJson({"type": "FeatureCollection", "features": [{"type": "Feature", "properties": {"id": "house", "popup": "<h1>address1</h1>", "time": "2017-06-02", "iconstyle": {"iconUrl": "http://downloadicons.net/sites/default/files/small-house-with-a-chimney-icon-70053.png", "iconSize": [20, 20]}, "icon": "marker"}, "geometry": {"type": "Point", "coordinates": [-2.548828, 51.467697]}}, {"type": "Feature", "properties": {"id": "house", "popup": "<h2 style=\"color:blue;\">address2<h2>", "time": "2017-07-02", "iconstyle": {"iconUrl": "http://downloadicons.net/sites/default/files/small-house-with-a-chimney-icon-70053.png", "iconSize": [20, 20]}, "icon": "marker"}, "geometry": {"type": "Point", "coordinates": [-0.087891, 51.536086]}}, {"type": "Feature", "properties": {"id": "house", "popup": "<h2 style=\"color:orange;\">address3<h2>", "time": "2017-08-02", "iconstyle": {"iconUrl": "http://downloadicons.net/sites/default/files/small-house-with-a-chimney-icon-70053.png", "iconSize": [20, 20]}, "icon": "marker"}, "geometry": {"type": "Point", "coordinates": [-6.240234, 53.383328]}}, {"type": "Feature", "properties": {"id": "house", "popup": "<h2 style=\"color:green;\">address4<h2>", "time": "2017-09-02", "iconstyle": {"iconUrl": "http://downloadicons.net/sites/default/files/small-house-with-a-chimney-icon-70053.png", "iconSize": [20, 20]}, "icon": "marker"}, "geometry": {"type": "Point", "coordinates": [-1.40625, 60.261617]}}, {"type": "Feature", "properties": {"id": "house", "popup": "<table style=\"width:100%\">\n  <tr>\n    <th>Firstname</th>\n    <th>Lastname</th> \n    <th>Age</th>\n  </tr>\n  <tr>\n    <td>Jill</td>\n    <td>Smith</td> \n    <td>50</td>\n  </tr>\n  <tr>\n    <td>Eve</td>\n    <td>Jackson</td> \n    <td>94</td>\n  </tr>\n</table>", "time": "2017-10-02", "iconstyle": {"iconUrl": "http://downloadicons.net/sites/default/files/small-house-with-a-chimney-icon-70053.png", "iconSize": [20, 20]}, "icon": "marker"}, "geometry": {"type": "Point", "coordinates": [-1.516113, 53.800651]}}, {"type": "Feature", "properties": {"id": "man", "style": {"weight": 0}, "popup": "Current address", "icon": "circle", "iconstyle": {"fillColor": "green", "fillOpacity": 0.6, "radius": 13, "stroke": "false"}, "times": ["2017-06-02", "2017-07-02", "2017-08-02", "2017-09-02", "2017-10-02"]}, "geometry": {"type": "LineString", "coordinates": [[-2.548828, 51.467697], [-0.087891, 51.536086], [-6.240234, 53.383328], [-1.40625, 60.261617], [-1.516113, 53.800651]]}}]}, {
+                    pointToLayer: function (feature, latLng) {
+                        if (feature.properties.icon == 'marker') {
+                            if(feature.properties.iconstyle){
+                                return new L.Marker(latLng, {
+                                    icon: L.icon(feature.properties.iconstyle)});
+                            }
+                            //else
+                            return new L.Marker(latLng);
+                        }
+                        if (feature.properties.icon == 'circle') {
+                            if (feature.properties.iconstyle) {
+                                return new L.circleMarker(latLng, feature.properties.iconstyle)
+                                };
+                            //else
+                            return new L.circleMarker(latLng);
+                        }
+                        //else
+
+                        return new L.Marker(latLng);
+                    },
+                    style: function (feature) {
+                        return feature.properties.style;
+                    },
+                    onEachFeature: function(feature, layer) {
+                        if (feature.properties.popup) {
+                        layer.bindPopup(feature.properties.popup);
+                        }
+                    }
+                })
+
+            var timestamped_geo_json_d242f59565b1453a8873faa876fff01c = L.timeDimension.layer.geoJson(geoJsonLayer,
+                {updateTimeDimension: true,addlastPoint: true}
+                ).addTo(map_76becb42d44a4af2ad433fbb0cb84087);
+        
+</script>

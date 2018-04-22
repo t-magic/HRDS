@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_fa9858eea09d4e7db5110c832d39d91a {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.3.6/dist/leaflet-search.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.3.6/dist/leaflet-search.min.css" />
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_fa9858eea09d4e7db5110c832d39d91a" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_fa9858eea09d4e7db5110c832d39d91a = L.map(
+                                  'map_fa9858eea09d4e7db5110c832d39d91a',
+                                  {center: [41.9,12.5],
+                                  zoom: 12,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_58fd6a28379d462a842d3e511add912e = L.tileLayer(
+                'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxNativeZoom": 18,
+  "maxZoom": 18,
+  "minZoom": 0,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_fa9858eea09d4e7db5110c832d39d91a);
+        
+    
+
+            var macro_element_d9148343fefd48ce9cf0f18d37b1cf50 = new L.GeoJSON({'timestamp': '2015-08-08T19:03:02Z', 'copyright': 'The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.', 'generator': 'overpass-turbo', 'type': 'FeatureCollection', 'features': [{'geometry': {'coordinates': [12.4910927, 41.8950196], 'type': 'Point'}, 'properties': {'addr:country': 'IT', 'name': "la Bottega del caffe'", 'addr:postcode': '00184', 'amenity': 'bar', '@id': 'node/500129236', 'addr:street': 'Piazza della Madonna dei Monti', 'addr:housenumber': '5', 'addr:city': 'Roma'}, 'id': 'node/500129236', 'type': 'Feature'}, {'geometry': {'coordinates': [12.5132952, 41.8970607], 'type': 'Point'}, 'properties': {'amenity': 'bar', '@id': 'node/560446888', 'name': 'Marani'}, 'id': 'node/560446888', 'type': 'Feature'}, {'geometry': {'coordinates': [12.4910603, 41.8948257], 'type': 'Point'}, 'properties': {'amenity': 'bar', '@id': 'node/574326909', 'name': 'Il Faraone'}, 'id': 'node/574326909', 'type': 'Feature'}, {'geometry': {'coordinates': [12.5031364, 41.8970108], 'type': 'Point'}, 'properties': {'addr:country': 'IT', 'name': 'Snackbar Eugenio', 'phone': '+39 06 4466154', 'addr:postcode': '00185', 'amenity': 'bar', '@id': 'node/1213332726', 'addr:street': 'Via Principe Amedeo', 'addr:housenumber': '139', 'operator': 'Marchetti Eugenio', 'addr:city': 'Roma'}, 'id': 'node/1213332726', 'type': 'Feature'}, {'geometry': {'coordinates': [12.5051946, 41.905864], 'type': 'Point'}, 'properties': {'addr:country': 'IT', 'name': "Pretorius Cafe'", 'ref:vatin': 'IT09397401002', 'phone': '+39 06 490077', 'amenity': 'bar', '@id': 'node/1660369493', 'addr:street': 'Via San Martino della Battaglia', 'addr:housenumber': '27', 'operator': 'Cesarina Utilia', 'addr:city': 'Roma'}, 'id': 'node/1660369493', 'type': 'Feature'}, {'geometry': {'coordinates': [12.492714, 41.8959687], 'type': 'Point'}, 'properties': {'name': 'Casa Clementina', 'addr:street': 'Via Clementina', '@id': 'node/1660404822', 'operator': 'Flexy Soc.Coop Arl.', 'restaurant:type': 'enoteca', 'addr:country': 'IT', 'ref:vatin': 'IT09253451000', 'cuisine': 'regional', 'amenity': 'bar', 'phone': '+39 06 48913254', 'addr:housenumber': '9', 'addr:city': 'Roma'}, 'id': 'node/1660404822', 'type': 'Feature'}, {'geometry': {'coordinates': [12.5009894, 41.8999812], 'type': 'Point'}, 'properties': {'amenity': 'bar', '@id': 'node/1926196463', 'name': 'Twins'}, 'id': 'node/1926196463', 'type': 'Feature'}, {'geometry': {'coordinates': [12.4946166, 41.8898973], 'type': 'Point'}, 'properties': {'name': 'My Bar', 'ref:vatin': 'IT067475410008', 'phone': '+39 06 7004425', 'amenity': 'bar', '@id': 'node/2092013187', 'addr:street': 'Via di San Giovanni in Laterano', 'addr:housenumber': '12', 'operator': 'Anfiteatro S.r.l.'}, 'id': 'node/2092013187', 'type': 'Feature'}, {'geometry': {'coordinates': [12.4979123, 41.8889233], 'type': 'Point'}, 'properties': {'website': 'http://www.iclementini.it/', 'addr:country': 'IT', 'name': 'San Clemente', 'cuisine': 'italian', 'addr:postcode': '00184', 'amenity': 'bar', '@id': 'node/2128214065', 'addr:street': 'Via di San Giovanni in Laterano', 'addr:housenumber': '106', 'source': 'GPS', 'addr:city': 'Roma'}, 'id': 'node/2128214065', 'type': 'Feature'}, {'geometry': {'coordinates': [12.5045633, 41.9048511], 'type': 'Point'}, 'properties': {'name': 'The Yellow Bar', 'payment:bitcoin': 'yes', 'contact:phone': '+39 06 49382682', 'contact:website': 'http://the-yellow.com/', 'amenity': 'bar', '@id': 'node/2244964954', 'addr:street': 'Via Palestro', 'addr:housenumber': '40'}, 'id': 'node/2244964954', 'type': 'Feature'}, {'geometry': {'coordinates': [12.4929144, 41.8949856], 'type': 'Point'}, 'properties': {'name': 'Er Caffettiere', 'restaurant:type:it': 'bar;tavola_calda', 'ref:vatin': 'IT09487221005', 'phone': '+39 320 4168532', 'amenity': 'bar', '@id': 'node/2361780469', 'addr:street': 'Via Urbana', 'addr:housenumber': '72/73', 'operator': 'Sa.Pe. SNC di Spartaco Pelle & C.', 'addr:city': 'Roma'}, 'id': 'node/2361780469', 'type': 'Feature'}, {'geometry': {'coordinates': [12.4839357, 41.8879519], 'type': 'Point'}, 'properties': {'name': '0,75', 'opening_hours': 'Mo-Su 11:00-02:00', 'phone': '+39 066875706', 'amenity': 'bar', '@id': 'node/3217327590', 'addr:street': 'Via dei Cerchi', 'addr:housenumber': '65', 'addr:city': 'Roma'}, 'id': 'node/3217327590', 'type': 'Feature'}, {'geometry': {'coordinates': [12.4952573, 41.8888415], 'type': 'Point'}, 'properties': {'shop': 'pastry', 'name': 'La Follia', 'restaurant:type:it': 'wine_bar', 'ref:vatin': 'IT11279721002', 'phone': '+39 06 45477438', 'amenity': 'bar', '@id': 'node/3320437843', 'addr:street': "Via Capo d'Africa", 'addr:housenumber': '26', 'operator': 'Dolce Calabria SAS di Morello Alessandra & C.'}, 'id': 'node/3320437843', 'type': 'Feature'}, {'geometry': {'coordinates': [12.4978786, 41.9001486], 'type': 'Point'}, 'properties': {'amenity': 'bar', '@id': 'node/3403821230', 'name': 'Snack bar peter bar'}, 'id': 'node/3403821230', 'type': 'Feature'}, {'geometry': {'coordinates': [12.5023541, 41.9016306], 'type': 'Point'}, 'properties': {'brand': 'Chef Express', 'building:level': '0', 'name': 'Buffet Roma Termini', 'ref:vatin': 'IT00876120213', 'addr:housename': 'Roma Termini', 'amenity': 'bar', '@id': 'node/3485963126', 'addr:street': 'Via Marsala', 'addr:housenumber': '25', 'operator': 'Chef Express S.p.A.'}, 'id': 'node/3485963126', 'type': 'Feature'}, {'geometry': {'coordinates': [12.4887487, 41.9069283], 'type': 'Point'}, 'properties': {'name': 'Bar Ludovisi', 'ref:vatin': 'IT11344331001', 'phone': '+39 06 42016014', 'amenity': 'bar', '@id': 'node/3551307620', 'addr:street': 'Via Ludovisi', 'addr:housenumber': '30-34', 'operator': 'Doppio Zero Srl.'}, 'id': 'node/3551307620', 'type': 'Feature'}, {'geometry': {'coordinates': [12.5005788, 41.8948307], 'type': 'Point'}, 'properties': {'addr:country': 'IT', 'name': 'Il Pasticciaccio', 'ref:vatin': 'IT09547101007', 'phone': '+39 06 4826928', 'addr:postcode': '00185', 'amenity': 'bar', '@id': 'node/3578353919', 'addr:street': 'Via Merulana', 'addr:housenumber': '36/37', 'operator': 'Angelo Blu s.r.l.', 'addr:city': 'Roma'}, 'id': 'node/3578353919', 'type': 'Feature'}, {'geometry': {'coordinates': [12.5121332, 41.8971197], 'type': 'Point'}, 'properties': {'name': 'Buddha Bar', 'addr:postcode': '00185', 'amenity': 'bar', '@id': 'node/3607603463', 'addr:street': 'Via Tiburtina', 'addr:housenumber': '22', 'addr:city': 'Roma'}, 'id': 'node/3607603463', 'type': 'Feature'}]});
+
+            map_fa9858eea09d4e7db5110c832d39d91a.addLayer(macro_element_d9148343fefd48ce9cf0f18d37b1cf50);
+
+            var searchControl = new L.Control.Search({
+                layer: macro_element_d9148343fefd48ce9cf0f18d37b1cf50,
+                propertyName: 'name',
+            
+                initial: false,
+                zoom: 20,
+                position:'topleft',
+                hideMarkerOnCollapse: true
+            
+            
+                });
+                searchControl.on('search:locationfound', function(e) {
+
+                    e.layer.setStyle({fillColor: '#3f0', color: '#0f0'});
+                    if(e.layer._popup)
+                        e.layer.openPopup();
+
+                }).on('search:collapsed', function(e) {
+
+                    macro_element_d9148343fefd48ce9cf0f18d37b1cf50.eachLayer(function(layer) {   //restore feature color
+                        macro_element_d9148343fefd48ce9cf0f18d37b1cf50.resetStyle(layer);
+                    });
+                });
+            map_fa9858eea09d4e7db5110c832d39d91a.addControl( searchControl );
+
+        
+</script>

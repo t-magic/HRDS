@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_2b9e24a96b4d44c6af92ba4bf1521229 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="https://rawgit.com/nezasa/iso8601-js-period/master/iso8601.min.js"></script>
+    <script src="https://rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css" />
+    <link rel="stylesheet" href="http://apps.socib.es/Leaflet.TimeDimension/dist/leaflet.timedimension.control.min.css" />
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2b9e24a96b4d44c6af92ba4bf1521229" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_2b9e24a96b4d44c6af92ba4bf1521229 = L.map(
+                                  'map_2b9e24a96b4d44c6af92ba4bf1521229',
+                                  {center: [-40,-50],
+                                  zoom: 5,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            L.control.scale().addTo(map_2b9e24a96b4d44c6af92ba4bf1521229);
+        
+    
+            var tile_layer_c80e28224d9645b89901ad8b5528c162 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxNativeZoom": 18,
+  "maxZoom": 18,
+  "minZoom": 0,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_2b9e24a96b4d44c6af92ba4bf1521229);
+        
+    
+            var macro_element_e4ae9ad6eea6406a850895bc47b01d9b = L.tileLayer.wms(
+                'http://oos.soest.hawaii.edu/thredds/wms/hioos/satellite/dhw_5km',
+                {
+  "attribution": "",
+  "crs": null,
+  "format": "image/png",
+  "layers": "CRW_SST",
+  "styles": "boxfill/sst_36",
+  "transparent": true,
+  "uppercase": false,
+  "version": "1.1.1"
+}
+                ).addTo(map_2b9e24a96b4d44c6af92ba4bf1521229);
+
+        
+    
+            var macro_element_990f8896d33d4d98a2d504ce853d8980 = L.tileLayer.wms(
+                'http://oos.soest.hawaii.edu/thredds/wms/hioos/satellite/dhw_5km',
+                {
+  "attribution": "",
+  "crs": null,
+  "format": "image/png",
+  "layers": "CRW_SSTANOMALY",
+  "styles": "boxfill/sst_36",
+  "transparent": true,
+  "uppercase": false,
+  "version": "1.1.1"
+}
+                ).addTo(map_2b9e24a96b4d44c6af92ba4bf1521229);
+
+        
+    
+            map_2b9e24a96b4d44c6af92ba4bf1521229.timeDimension = L.timeDimension({
+                period:"PT1H",
+                
+                timeInterval: "2013-06-03T12:00:00.000Z/2018-04-20T12:00:00.000Z",
+                
+                });
+            map_2b9e24a96b4d44c6af92ba4bf1521229.timeDimensionControl = L.control.timeDimension({
+                position: 'bottomleft',
+                autoPlay: false,
+                playerOptions: {
+                    transitionTime: 200,
+                    loop: false}
+                    });
+            map_2b9e24a96b4d44c6af92ba4bf1521229.addControl(map_2b9e24a96b4d44c6af92ba4bf1521229.timeDimensionControl);
+
+            
+            var macro_element_e4ae9ad6eea6406a850895bc47b01d9b = L.timeDimension.layer.wms(macro_element_e4ae9ad6eea6406a850895bc47b01d9b,
+                {updateTimeDimension: false,
+                 wmsVersion: '',
+                }
+                ).addTo(map_2b9e24a96b4d44c6af92ba4bf1521229);
+            
+            var macro_element_990f8896d33d4d98a2d504ce853d8980 = L.timeDimension.layer.wms(macro_element_990f8896d33d4d98a2d504ce853d8980,
+                {updateTimeDimension: false,
+                 wmsVersion: '',
+                }
+                ).addTo(map_2b9e24a96b4d44c6af92ba4bf1521229);
+            
+        
+    
+            var layer_control_372758c8a92846aeb0ed0b927638351b = {
+                base_layers : { "openstreetmap" : tile_layer_c80e28224d9645b89901ad8b5528c162, },
+                overlays : { "sea_surface_temperature" : macro_element_e4ae9ad6eea6406a850895bc47b01d9b,"analysed sea surface temperature anomaly" : macro_element_990f8896d33d4d98a2d504ce853d8980,"macro_element_20d3d40afcad497c970d82c5f480e616" : timestamped_wms_tile_layers_20d3d40afcad497c970d82c5f480e616, }
+                };
+            L.control.layers(
+                layer_control_372758c8a92846aeb0ed0b927638351b.base_layers,
+                layer_control_372758c8a92846aeb0ed0b927638351b.overlays,
+                {position: 'topright',
+                 collapsed: true,
+                 autoZIndex: true
+                }).addTo(map_2b9e24a96b4d44c6af92ba4bf1521229);
+            
+        
+</script>
