@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_74ee10f94d0b4bdc997183cdb4f61089 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="https://rawgit.com/nezasa/iso8601-js-period/master/iso8601.min.js"></script>
+    <script src="https://rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css" />
+    <link rel="stylesheet" href="http://apps.socib.es/Leaflet.TimeDimension/dist/leaflet.timedimension.control.min.css" />
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_74ee10f94d0b4bdc997183cdb4f61089" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_74ee10f94d0b4bdc997183cdb4f61089 = L.map(
+                                  'map_74ee10f94d0b4bdc997183cdb4f61089',
+                                  {center: [-40,-50],
+                                  zoom: 5,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            L.control.scale().addTo(map_74ee10f94d0b4bdc997183cdb4f61089);
+        
+    
+            var tile_layer_8f65b3b712ac49afa147195a7e44cf35 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxNativeZoom": 18,
+  "maxZoom": 18,
+  "minZoom": 0,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_74ee10f94d0b4bdc997183cdb4f61089);
+        
+    
+            var macro_element_9401517ba09245e2b047a8d98557c50b = L.tileLayer.wms(
+                'http://oos.soest.hawaii.edu/thredds/wms/hioos/satellite/dhw_5km',
+                {
+  "attribution": "",
+  "crs": null,
+  "format": "image/png",
+  "layers": "CRW_SST",
+  "styles": "boxfill/sst_36",
+  "transparent": true,
+  "uppercase": false,
+  "version": "1.1.1"
+}
+                ).addTo(map_74ee10f94d0b4bdc997183cdb4f61089);
+
+        
+    
+            map_74ee10f94d0b4bdc997183cdb4f61089.timeDimension = L.timeDimension({
+                period:"PT1H",
+                
+                timeInterval: "2013-06-03T12:00:00.000Z/2018-04-20T12:00:00.000Z",
+                
+                });
+            map_74ee10f94d0b4bdc997183cdb4f61089.timeDimensionControl = L.control.timeDimension({
+                position: 'bottomleft',
+                autoPlay: false,
+                playerOptions: {
+                    transitionTime: 200,
+                    loop: false}
+                    });
+            map_74ee10f94d0b4bdc997183cdb4f61089.addControl(map_74ee10f94d0b4bdc997183cdb4f61089.timeDimensionControl);
+
+            
+            var macro_element_9401517ba09245e2b047a8d98557c50b = L.timeDimension.layer.wms(macro_element_9401517ba09245e2b047a8d98557c50b,
+                {updateTimeDimension: false,
+                 wmsVersion: '',
+                }
+                ).addTo(map_74ee10f94d0b4bdc997183cdb4f61089);
+            
+        
+    
+            var layer_control_bc396e2aee0b4691be50a20ba5e4468a = {
+                base_layers : { "openstreetmap" : tile_layer_8f65b3b712ac49afa147195a7e44cf35, },
+                overlays : { "sea_surface_temperature" : macro_element_9401517ba09245e2b047a8d98557c50b,"macro_element_11650f492fff4578b3c1533e04db4449" : timestamped_wms_tile_layers_11650f492fff4578b3c1533e04db4449, }
+                };
+            L.control.layers(
+                layer_control_bc396e2aee0b4691be50a20ba5e4468a.base_layers,
+                layer_control_bc396e2aee0b4691be50a20ba5e4468a.overlays,
+                {position: 'topright',
+                 collapsed: true,
+                 autoZIndex: true
+                }).addTo(map_74ee10f94d0b4bdc997183cdb4f61089);
+            
+        
+</script>

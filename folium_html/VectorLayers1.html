@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_a15400464d704f2a91e73de120627862 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.rawgit.com/ljagis/leaflet-measure/2.1.7/dist/leaflet-measure.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/ljagis/leaflet-measure/2.1.7/dist/leaflet-measure.css" />
+    <script src="https://cdn.rawgit.com/ljagis/leaflet-measure/2.1.7/dist/leaflet-measure.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/ljagis/leaflet-measure/2.1.7/dist/leaflet-measure.css" />
+    <script src="https://cdn.rawgit.com/ljagis/leaflet-measure/2.1.7/dist/leaflet-measure.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/ljagis/leaflet-measure/2.1.7/dist/leaflet-measure.css" />
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a15400464d704f2a91e73de120627862" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_a15400464d704f2a91e73de120627862 = L.map(
+                                  'map_a15400464d704f2a91e73de120627862',
+                                  {center: [-27.5717,-48.6256],
+                                  zoom: 9,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_211a28ea74b74db3ae9310aee5517598 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxNativeZoom": 18,
+  "maxZoom": 18,
+  "minZoom": 0,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_a15400464d704f2a91e73de120627862);
+        
+    
+            var measure_control_5506d3cee8f14ae4a3e50cc9294078cb = new L.Control.Measure(
+            {"position": "topright", "primaryLengthUnit": "meters", "secondaryLengthUnit": "miles", "primaryAreaUnit": "sqmeters", "secondaryAreaUnit": "acres"});
+            map_a15400464d704f2a91e73de120627862.addControl(measure_control_5506d3cee8f14ae4a3e50cc9294078cb);
+
+        
+    
+            var circle_marker_c3b4641b6ab040159c765ecc82ac3b75 = L.circleMarker(
+                [-27.55, -48.8],
+                {
+  "bubblingMouseEvents": true,
+  "color": "cornflowerblue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "cornflowerblue",
+  "fillOpacity": 0.6,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1,
+  "radius": 50,
+  "stroke": false,
+  "weight": 3
+}
+                )
+                .bindTooltip("I am in pixels")
+                .addTo(map_a15400464d704f2a91e73de120627862);
+            
+    
+            var popup_ac2e277e474949c7afeec9c2f0e25f11 = L.popup({maxWidth: '300'});
+
+            
+                var html_2320e4964b7c4e28a48819f8be2cb87f = $('<div id="html_2320e4964b7c4e28a48819f8be2cb87f" style="width: 100.0%; height: 100.0%;">50 pixels</div>')[0];
+                popup_ac2e277e474949c7afeec9c2f0e25f11.setContent(html_2320e4964b7c4e28a48819f8be2cb87f);
+            
+
+            circle_marker_c3b4641b6ab040159c765ecc82ac3b75.bindPopup(popup_ac2e277e474949c7afeec9c2f0e25f11);
+
+            
+        
+    
+            var circle_marker_76580becb79a48398572ac73890bc371 = L.circleMarker(
+                [-27.35, -48.8],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "black",
+  "fillOpacity": 0.6,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1,
+  "radius": 25,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                
+                .addTo(map_a15400464d704f2a91e73de120627862);
+            
+    
+
+            var circle_d41ebd34080a4de0b4296b72107bfc09 = L.circle(
+                [-27.551667, -48.478889],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.6,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1,
+  "radius": 10000,
+  "stroke": true,
+  "weight": 1
+}
+                )
+                .bindTooltip("I am in meters")
+                .addTo(map_a15400464d704f2a91e73de120627862);
+            
+    
+            var popup_605321226b2d4757b449024759ba908f = L.popup({maxWidth: '300'});
+
+            
+                var html_8155bb0f84de45feae251bf9803deb93 = $('<div id="html_8155bb0f84de45feae251bf9803deb93" style="width: 100.0%; height: 100.0%;">10000 meters</div>')[0];
+                popup_605321226b2d4757b449024759ba908f.setContent(html_8155bb0f84de45feae251bf9803deb93);
+            
+
+            circle_d41ebd34080a4de0b4296b72107bfc09.bindPopup(popup_605321226b2d4757b449024759ba908f);
+
+            
+        
+</script>

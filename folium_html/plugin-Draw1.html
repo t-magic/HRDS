@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_11f044a7b1bb4de0953952479d956951 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.rawgit.com/Leaflet/Leaflet.draw/v0.4.12/dist/leaflet.draw.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/Leaflet/Leaflet.draw/v0.4.12/dist/leaflet.draw.css" />
+    <script src="https://cdn.rawgit.com/Leaflet/Leaflet.draw/v0.4.12/dist/leaflet.draw.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/Leaflet/Leaflet.draw/v0.4.12/dist/leaflet.draw.css" />
+    <script src="https://cdn.rawgit.com/Leaflet/Leaflet.draw/v0.4.12/dist/leaflet.draw.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/Leaflet/Leaflet.draw/v0.4.12/dist/leaflet.draw.css" />
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_11f044a7b1bb4de0953952479d956951" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_11f044a7b1bb4de0953952479d956951 = L.map(
+                                  'map_11f044a7b1bb4de0953952479d956951',
+                                  {center: [0,0],
+                                  zoom: 1,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_ea4aef209ddd4a2cbbaf6d94a44980bb = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxNativeZoom": 18,
+  "maxZoom": 18,
+  "minZoom": 0,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_11f044a7b1bb4de0953952479d956951);
+        
+    
+            // FeatureGroup is to store editable layers.
+            var drawnItems = new L.featureGroup().addTo(map_11f044a7b1bb4de0953952479d956951);
+            var draw_control_81d77b85b60c4a96a69db96518a19411 = new L.Control.Draw({
+                "edit": {"featureGroup": drawnItems}
+                }).addTo(map_11f044a7b1bb4de0953952479d956951)
+            map_11f044a7b1bb4de0953952479d956951.on(L.Draw.Event.CREATED, function (event) {
+              var layer = event.layer,
+                  type = event.layerType,
+                  coords;
+              var coords = JSON.stringify(layer.toGeoJSON());
+              layer.on('click', function() {
+                alert(coords);
+                console.log(coords);
+                });
+               drawnItems.addLayer(layer);
+             });
+
+        map_11f044a7b1bb4de0953952479d956951.on('draw:created', function(e) {
+            drawnItems.addLayer(e.layer);
+        });
+
+        document.getElementById('export').onclick = function(e) {
+            var data = drawnItems.toGeoJSON();
+            var convertedData = 'text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(data));
+            document.getElementById('export').setAttribute('href', 'data:' + convertedData);
+            document.getElementById('export').setAttribute('download','data.geojson');
+        }
+            
+</script>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_ba0a7d6e41804389b51f9745302b5409 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ba0a7d6e41804389b51f9745302b5409" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_ba0a7d6e41804389b51f9745302b5409 = L.map(
+                                  'map_ba0a7d6e41804389b51f9745302b5409',
+                                  {center: [43,-100],
+                                  zoom: 4,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_84c20c3c971b4da0a42848286132fc35 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxNativeZoom": 18,
+  "maxZoom": 18,
+  "minZoom": 0,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_ba0a7d6e41804389b51f9745302b5409);
+        
+    
+
+            var marker_c076f87c20664962aa73abcfbf02ee7a = L.marker(
+                [30, -100],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(map_ba0a7d6e41804389b51f9745302b5409);
+            
+    
+            var popup_d7487bfa83db40e18b48a4ae51ac818c = L.popup({maxWidth: '300'});
+
+            
+                var html_05bab6d1f57943e6b719ac443ba7ad77 = $('<div id="html_05bab6d1f57943e6b719ac443ba7ad77" style="width: 100.0%; height: 100.0%;">     <h1> This is a big popup</h1><br>     With a few lines of code...     <p>     <code>         from numpy import *<br>         exp(-2*pi)     </code>     </p>     </div>')[0];
+                popup_d7487bfa83db40e18b48a4ae51ac818c.setContent(html_05bab6d1f57943e6b719ac443ba7ad77);
+            
+
+            marker_c076f87c20664962aa73abcfbf02ee7a.bindPopup(popup_d7487bfa83db40e18b48a4ae51ac818c);
+
+            
+        
+</script>

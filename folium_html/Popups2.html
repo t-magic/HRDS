@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_5f684fdea07c491688ba41f5f2db5eb9 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5f684fdea07c491688ba41f5f2db5eb9" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_5f684fdea07c491688ba41f5f2db5eb9 = L.map(
+                                  'map_5f684fdea07c491688ba41f5f2db5eb9',
+                                  {center: [45,0],
+                                  zoom: 2,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_e654a36419964f0a8f854a9336d0a5b0 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxNativeZoom": 18,
+  "maxZoom": 18,
+  "minZoom": 0,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_5f684fdea07c491688ba41f5f2db5eb9);
+        
+    
+
+            var marker_21fa24195ddf436caa2b1667d0a7038c = L.marker(
+                [45, -10],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(map_5f684fdea07c491688ba41f5f2db5eb9);
+            
+    
+            var popup_0c3c2372bad2446ab4f97da904aa3047 = L.popup({maxWidth: '300'});
+
+            
+                var html_e77f0978b0b24ba5a2ac36b2fe7519ed = $('<div id="html_e77f0978b0b24ba5a2ac36b2fe7519ed" style="width: 100.0%; height: 100.0%;">Let&#39;s try quotes</div>')[0];
+                popup_0c3c2372bad2446ab4f97da904aa3047.setContent(html_e77f0978b0b24ba5a2ac36b2fe7519ed);
+            
+
+            marker_21fa24195ddf436caa2b1667d0a7038c.bindPopup(popup_0c3c2372bad2446ab4f97da904aa3047);
+
+            
+        
+    
+
+            var marker_095062c3c6ae4e3c9a781cfc620441e8 = L.marker(
+                [45, -30],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(map_5f684fdea07c491688ba41f5f2db5eb9);
+            
+    
+            var popup_755aad4880824e66ad1dd238d14a5080 = L.popup({maxWidth: '300'});
+
+            
+                var html_f23efb555ad6445c8ff579a5230322e7 = $('<div id="html_f23efb555ad6445c8ff579a5230322e7" style="width: 100.0%; height: 100.0%;">Ça c&#39;est chouette</div>')[0];
+                popup_755aad4880824e66ad1dd238d14a5080.setContent(html_f23efb555ad6445c8ff579a5230322e7);
+            
+
+            marker_095062c3c6ae4e3c9a781cfc620441e8.bindPopup(popup_755aad4880824e66ad1dd238d14a5080);
+
+            
+        
+</script>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_6bcf53fd00a247ccb6bedab9f4c5e35d {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6bcf53fd00a247ccb6bedab9f4c5e35d" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_6bcf53fd00a247ccb6bedab9f4c5e35d = L.map(
+                                  'map_6bcf53fd00a247ccb6bedab9f4c5e35d',
+                                  {center: [43,-100],
+                                  zoom: 4,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_e974c4b4418448f988b473f316fc8fa0 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxNativeZoom": 18,
+  "maxZoom": 18,
+  "minZoom": 0,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_6bcf53fd00a247ccb6bedab9f4c5e35d);
+        
+    
+
+            var marker_670a8968f8f34ceb97992b32cb1eb0c5 = L.marker(
+                [30, -100],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                
+                .addTo(map_6bcf53fd00a247ccb6bedab9f4c5e35d);
+            
+    
+            var popup_254e1f934bb84263b2d960d54fd71ed4 = L.popup({maxWidth: '300'});
+
+            
+                var html_b2f3277e3fd94543a780272d1a360d88 = $('<div id="html_b2f3277e3fd94543a780272d1a360d88" style="width: 100.0%; height: 100.0%;"><table border="1" class="dataframe table table-striped table-hover table-condensed table-responsive">   <thead>     <tr style="text-align: right;">       <th></th>       <th>cats</th>       <th>dogs</th>     </tr>   </thead>   <tbody>     <tr>       <th>0</th>       <td>apple</td>       <td>oranges</td>     </tr>     <tr>       <th>1</th>       <td>other</td>       <td>stuff</td>     </tr>   </tbody> </table></div>')[0];
+                popup_254e1f934bb84263b2d960d54fd71ed4.setContent(html_b2f3277e3fd94543a780272d1a360d88);
+            
+
+            marker_670a8968f8f34ceb97992b32cb1eb0c5.bindPopup(popup_254e1f934bb84263b2d960d54fd71ed4);
+
+            
+        
+</script>
